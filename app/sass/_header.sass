@@ -1,6 +1,117 @@
 @import "fonts"
 @import "vars"
 
+
+/*==========  header  ==========*/
 header
   padding: 15px 0
+  width: 100%
+  z-index: 2
+  left: 0
+  top: 0
+  position: absolute
+  .list-messengers
+    li
+      margin: 0 10px 0 0
+      &:last-child
+        margin: 0
+  .list-messengers
+    margin: 0 24px 0 92px
 
+.dropdown-language
+  .dropdown-toggle
+    cursor: pointer
+    display: flex
+    align-items: center
+    &:after
+      border: none
+      margin: 0 0 0 10px
+      width: 8px
+      height: 4px
+      background: url("../img/arrow-bottom.svg") no-repeat center
+        size: 100%
+
+.language-item
+  display: flex
+  align-items: center
+  &__flag
+    margin: 0 5px 0 0
+    width: 22px
+    height: 22px
+    min-width: 22px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.header
+  position: relative
+  border-bottom: 1px solid #DBDEE6
+
+.logo
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: flex-start
+  width: fit-content
+  color: $color
+  font-size: 32px
+  font-weight: bold
+  &:hover
+    color: $accent
+
+.logo-text
+  letter-spacing: 0.2em
+  margin: -8px 0 0
+  font-size: 14px
+  font-weight: normal
+  display: block
+  text-align: right
+  font-family: $default-font
+
+.btn-burger
+  display: none
+  flex-direction: column
+  align-items: flex-end
+  width: 26px
+  margin: 0 0 0 23px
+  span
+    display: block
+    height: 3px
+    width: 100%
+    margin: 0 0 5px
+    background: $accent
+    border-radius: 3px
+    &:last-child
+      margin: 0
+      width: calc(100% - 6px)
+
+.phone-mobile
+  border-radius: 50%
+  display: none
+  align-items: center
+  justify-content: center
+  width: 30px
+  height: 30px
+  min-width: 30px
+  background: $accent
+  fill: #fff
+  margin: 0 0 0 10px
+  padding: 7px
+  &:hover
+    background: $blue
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 auto
+  li
+    margin: 0 50px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: $color
+      &:hover
+        color: $accent
+
+/*==========  header end  ==========*/
