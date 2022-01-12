@@ -28,8 +28,38 @@
 <body>
 
 <div class="mobile-menu">
+  <div class="mobile-menu__head">
+    <a href="index.html" class="logo">
+      <span class="logo-name">Auto<span class="color-accent">Banka</span></span>
+      <h2 class="logo-text">выкуп авто</h2>
+    </a>
+    <div class="btn-close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></div>
+  </div>
+  <div class="mobile-menu__body">
+    <ul class="menu">
+      <li><a href="about.html">О нас</a></li>
+      <li><a href="news.html">Новости</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
 
+    <div class="list-language">
+        <a href="#" class="list-language-item">
+          <span class="list-language-item__icon"><img src="img/latvia.svg" alt=""></span>
+          <span class="list-language-item__text">lv</span>
+        </a>
+      <a href="#" class="list-language-item">
+        <span class="list-language-item__icon"><img src="img/russia.svg" alt=""></span>
+        <span class="list-language-item__text">RU</span>
+      </a>
+      <a href="#" class="list-language-item">
+        <span class="list-language-item__icon"><img src="img/usa.svg" alt=""></span>
+        <span class="list-language-item__text">en</span>
+      </a>
+    </div>
+  </div>
 </div>
+
+<div class="overlay-menu"></div>
 
 <header>
   <div class="container">
@@ -37,7 +67,7 @@
       <div class="col-12 d-flex flex-wrap align-items-center">
         <a href="index.html" class="logo">
           <span class="logo-name">Auto<span class="color-accent">Banka</span></span>
-          <h2 class="logo-text">выкуп авто</h2>
+          <h2 class="logo-text">auto uzpirksana</h2>
         </a>
 
         <ul class="menu">
@@ -56,7 +86,7 @@
           <div class="dropdown-menu">
             <div class="dropdown-item">
               <div class="language-item">
-                <div class="language-item__flag"><img src="img/sha.svg" alt=""></div>
+                <div class="language-item__flag"><img src="img/usa.svg" alt=""></div>
                 <div class="language-item__text">USA</div>
               </div>
             </div>
@@ -146,7 +176,7 @@
               <span class="input-country__icon"><img src="img/es.png" alt=""></span>
               <span class="input-country__text">lv</span>
             </span>
-                    <input type="text" placeholder="Номер автомобиля" name="number_auto">
+                    <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
                   </label>
 
                   <label>
@@ -206,7 +236,7 @@
               <span class="input-country__icon"><img src="img/es.png" alt=""></span>
               <span class="input-country__text">lv</span>
             </span>
-                    <input type="text" placeholder="Номер автомобиля" name="number_auto">
+                    <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
                   </label>
 
                   <label>
@@ -293,38 +323,38 @@
     </div>
 
     <div class="row category-auto-slider">
-      <div class="col-12 col-md-6 col-lg-4 mb-20">
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
         <div class="category-auto-box category-auto-box1">
           <h4>Легковые</h4>
           <img src="img/category1.png" alt="" class="category-auto-box__img">
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-20">
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
         <div class="category-auto-box category-auto-box2">
           <h4>Коммерческие</h4>
           <img src="img/category2.png" alt="" class="category-auto-box__img">
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-20">
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
         <div class="category-auto-box category-auto-box3">
           <h4>Битые авто</h4>
           <img src="img/category3.png" alt="" class="category-auto-box__img">
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-20">
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
         <div class="category-auto-box category-auto-box4">
           <h4>Кредитные</h4>
           <img src="img/category4.png" alt="" class="category-auto-box__img">
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-20">
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
         <div class="category-auto-box category-auto-box5">
           <h4>Проблемные авто
             (арест)</h4>
           <img src="img/category5.png" alt="" class="category-auto-box__img">
         </div>
       </div>
-      <div class="col-12 col-md-6 col-lg-4 mb-20">
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
         <div class="category-auto-box category-auto-box6">
           <h4>Дорогие авто
             (люкс)</h4>
@@ -346,7 +376,7 @@
               <span class="input-country__icon"><img src="img/es.png" alt=""></span>
               <span class="input-country__text">lv</span>
             </span>
-            <input type="text" placeholder="Номер автомобиля" name="number_auto">
+            <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
           </label>
 
           <label>
@@ -433,7 +463,7 @@
         </div>
       </div>
 
-      <div class="col-12 d-none d-lg-none">
+      <div class="col-12 d-block d-lg-none">
         <div class="information-img"><img src="img/info-img.png" alt=""></div>
       </div>
     </div>
@@ -453,19 +483,19 @@
     </div>
 
     <div class="row">
-      <div class="col-12 col-lg-4 mb-30">
+      <div class="col-12 col-sm-6 col-lg-4 mb-30">
         <div class="documents-box">
           <div class="documents-box__icon"><img src="img/checked.svg" alt=""></div>
           <p>Паспорт ТС</p>
         </div>
       </div>
-      <div class="col-12 col-lg-4 mb-30">
+      <div class="col-12 col-sm-6 col-lg-4 mb-30">
         <div class="documents-box">
           <div class="documents-box__icon"><img src="img/checked.svg" alt=""></div>
           <p>Паспорт или ID карта владельца ТС</p>
         </div>
       </div>
-      <div class="col-12 col-lg-4 mb-30">
+      <div class="col-12 col-sm-6 col-lg-4 mb-30">
         <div class="documents-box">
           <div class="documents-box__icon"><img src="img/checked.svg" alt=""></div>
           <p>Номер банковского счёта владельца ТС</p>
@@ -629,7 +659,7 @@
               <span class="input-country__icon"><img src="img/es.png" alt=""></span>
               <span class="input-country__text">lv</span>
             </span>
-            <input type="text" placeholder="Номер автомобиля" name="number_auto">
+            <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
           </label>
 
           <label>
@@ -647,7 +677,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h2>Выгодный выкуп авто</h2>
+        <h2><span class="color-accent">Выгодный</span> выкуп авто</h2>
       </div>
     </div>
 
@@ -721,11 +751,11 @@
 <section class="reviews p-100 bg-blue-light">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-md-6">
         <h2><span class="color-accent">отзывы</span> о нашей работе</h2>
-        <div class="reviews-img"><img src="img/reviews-img.png" alt=""></div>
+        <div class="reviews-img d-none d-md-flex"><img src="img/reviews-img.png" alt=""></div>
       </div>
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-md-6">
         <div class="reviews-slider">
           <div class="slide">
             <div class="reviews-box">
@@ -946,7 +976,7 @@
               <span class="input-country__icon"><img src="img/es.png" alt=""></span>
               <span class="input-country__text">lv</span>
             </span>
-            <input type="text" placeholder="Номер автомобиля" name="number_auto">
+            <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
           </label>
 
           <label>
@@ -1014,7 +1044,17 @@
       </div>
 
       <div class="row">
-        <div class="col-12 col-md-6 col-lg-8">
+        <div class="col-12 col-lg-4 order-lg-1">
+          <div class="footer-top-item">
+            <ul class="list-messengers">
+              <li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+              <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+              <li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-8">
           <div class="footer-top-item">
             <div class="social-box">
               <p>Мы в соцсетях:</p>
@@ -1034,15 +1074,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="footer-top-item">
-            <ul class="list-messengers">
-              <li><a href="#"><img src="img/viber.svg" alt=""></a></li>
-              <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
-              <li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
-            </ul>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
@@ -1059,6 +1091,47 @@
   </div>
 </footer>
 
+<!-- Модальное окно -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Заказать
+          обратный <span class="color-accent">звонок</span></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form form-callback">
+          <label>
+            <input type="text" name="name" placeholder="Имя">
+          </label>
+
+          <label>
+            <input type="tel" class="phone-input phone-input6" placeholder="Телефон">
+          </label>
+
+          <button type="submit" class="btn btn-red">Перезвоните мне</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="check-icon"><img src="img/checked.svg" alt=""></div>
+
+        <h2 class="modal-title">заявка <span class="color-accent">отправлена</span></h2>
+        <div class="box-text">
+          <p>В ближайшее время с вами свяжется наш менеджер</p>
+        </div>
+        <button type="button" class="btn btn-red" data-dismiss="modal">ОК</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"

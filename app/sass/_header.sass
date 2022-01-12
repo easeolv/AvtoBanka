@@ -17,6 +17,38 @@ header
         margin: 0
   .list-messengers
     margin: 0 24px 0 92px
+  .logo
+    font-size: 40px
+    letter-spacing: 3px
+    font-weight: normal
+  .logo-name
+    text-transform: uppercase
+    font-family: 'AmericanCaptainCyrillic', sans-serif
+    font-style: italic
+    font-weight: normal
+    .color-accent
+      color: #fff
+      position: relative
+      z-index: 1
+      margin: 0 0 0 2px
+      &:before
+        content: ''
+        position: absolute
+        left: -2px
+        top: -4px
+        width: calc(100% + 8px)
+        height: 100%
+        z-index: -1
+        background: $accent
+        transform: skewX(-14deg)
+  .logo-text
+    text-align: center
+    margin: 0
+    font-family: 'BaronNeue', sans-serif
+    display: block
+    font-weight: normal
+    letter-spacing: .3em
+
 
 .dropdown-language
   .dropdown-toggle
@@ -64,6 +96,7 @@ header
   margin: -8px 0 0
   font-size: 14px
   font-weight: normal
+  line-height: normal
   display: block
   text-align: right
   font-family: $default-font
@@ -82,7 +115,7 @@ header
     background: $accent
     border-radius: 3px
     &:last-child
-      margin: 0
+      margin: 0 0 0 auto
       width: calc(100% - 6px)
 
 .phone-mobile
