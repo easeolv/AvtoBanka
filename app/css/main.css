@@ -1743,7 +1743,11 @@ header {
     text-transform: uppercase;
     font-family: 'AmericanCaptainCyrillic', sans-serif;
     font-style: italic;
-    font-weight: normal; }
+    font-weight: normal;
+    max-width: 190px;
+    width: 100%; }
+    header .logo-name img {
+      width: 100%; }
     header .logo-name .color-accent {
       color: #fff;
       position: relative;
@@ -2375,7 +2379,25 @@ a.list-contacts-item {
   .page {
     padding: 5px 0 30px; }
   .breadcrumb-nav {
-    margin: 0 auto 15px; } }
+    margin: 0 auto 15px; }
+  header .logo {
+    font-size: 19px;
+    text-transform: none;
+    letter-spacing: 0; }
+  header .logo-name {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    text-transform: none; }
+    header .logo-name .color-accent {
+      color: #084DBC;
+      margin: 0; }
+      header .logo-name .color-accent:before {
+        display: none; }
+  header .logo-text {
+    letter-spacing: .1em;
+    font-family: "Raleway", sans-serif;
+    margin: -4px auto 0; } }
 
 @media only screen and (max-width: 480px) {
   .lucrative-ransom-box {
@@ -2397,24 +2419,6 @@ a.list-contacts-item {
       padding: 0;
       width: 17px;
       height: 17px; }
-  header .logo {
-    font-size: 19px;
-    text-transform: none;
-    letter-spacing: 0; }
-  header .logo-name {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    text-transform: none; }
-    header .logo-name .color-accent {
-      color: #084DBC;
-      margin: 0; }
-      header .logo-name .color-accent:before {
-        display: none; }
-  header .logo-text {
-    letter-spacing: .1em;
-    font-family: "Raleway", sans-serif;
-    margin: -4px auto 0; }
   .news-card__img {
     height: 144px; }
   .contacts-box__img {

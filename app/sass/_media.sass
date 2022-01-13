@@ -370,6 +370,26 @@
   .breadcrumb-nav
     margin: 0 auto 15px
 
+  header
+    .logo
+      font-size: 19px
+      text-transform: none
+      letter-spacing: 0
+    .logo-name
+      font-family: $default-font
+      font-style: normal
+      font-weight: 800
+      text-transform: none
+      .color-accent
+        color: $accent
+        margin: 0
+        &:before
+          display: none
+    .logo-text
+      letter-spacing: .1em
+      font-family: $default-font
+      margin: -4px auto 0
+
 @media only screen and (max-width: 480px)
   .lucrative-ransom-box
     padding: 25px 15px 40px
@@ -394,25 +414,7 @@
       width: 17px
       height: 17px
 
-  header
-    .logo
-      font-size: 19px
-      text-transform: none
-      letter-spacing: 0
-    .logo-name
-      font-family: $default-font
-      font-style: normal
-      font-weight: 800
-      text-transform: none
-      .color-accent
-        color: $accent
-        margin: 0
-        &:before
-          display: none
-    .logo-text
-      letter-spacing: .1em
-      font-family: $default-font
-      margin: -4px auto 0
+
 
   .news-card__img
     height: 144px
