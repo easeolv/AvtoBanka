@@ -25,20 +25,6 @@
   src: url("../fonts/Gilroy/Gilroy-Regular.eot");
   src: url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"); }
 
-@font-face {
-  font-family: "AmericanCaptainCyrillic";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.eot");
-  src: url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.woff") format("woff"), url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BaronNeue";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/BaronNeue/BaronNeue.eot");
-  src: url("../fonts/BaronNeue/BaronNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/BaronNeue/BaronNeue.woff") format("woff"), url("../fonts/BaronNeue/BaronNeue.ttf") format("truetype"); }
-
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -1278,7 +1264,8 @@ h2 {
     text-align: center;
     font-size: 10px;
     letter-spacing: .3em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 500; }
   .mobile-menu .logo-lt .logo-text {
     font-size: 8px;
     letter-spacing: .3em; }
@@ -1770,20 +1757,6 @@ textarea {
   src: url("../fonts/Gilroy/Gilroy-Regular.eot");
   src: url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"); }
 
-@font-face {
-  font-family: "AmericanCaptainCyrillic";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.eot");
-  src: url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.woff") format("woff"), url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BaronNeue";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/BaronNeue/BaronNeue.eot");
-  src: url("../fonts/BaronNeue/BaronNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/BaronNeue/BaronNeue.woff") format("woff"), url("../fonts/BaronNeue/BaronNeue.ttf") format("truetype"); }
-
 /*==========  header  ==========*/
 header {
   padding: 15px 0;
@@ -1857,14 +1830,16 @@ header {
   font-weight: 500; }
   .logo:hover {
     color: #084DBC; }
+  .logo .logo-text {
+    font-weight: 800; }
 
 .logo-text {
-  letter-spacing: 0.4em;
+  letter-spacing: 8px;
   text-transform: uppercase;
   text-align: center;
   font-size: 10px;
   line-height: normal;
-  display: block;
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   width: 100%;
   margin: 2px 0 0; }
@@ -1954,20 +1929,6 @@ header {
   font-style: normal;
   src: url("../fonts/Gilroy/Gilroy-Regular.eot");
   src: url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "AmericanCaptainCyrillic";
-  font-weight: 400;
-  font-style: normal;
-  src: url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.eot");
-  src: url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.eot?#iefix") format("embedded-opentype"), url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.woff") format("woff"), url("../fonts/AmericanCaptainCyrillic/AmericanCaptainCyrillic.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "BaronNeue";
-  font-weight: normal;
-  font-style: normal;
-  src: url("../fonts/BaronNeue/BaronNeue.eot");
-  src: url("../fonts/BaronNeue/BaronNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/BaronNeue/BaronNeue.woff") format("woff"), url("../fonts/BaronNeue/BaronNeue.ttf") format("truetype"); }
 
 /*==========  footer  ==========*/
 footer {
@@ -2407,6 +2368,8 @@ a.list-contacts-item {
     margin: 0 0 20px; }
   .news-other {
     margin: 0 0 30px; }
+  .logo-text {
+    letter-spacing: 5px; }
   .logo-lt .logo-text {
     letter-spacing: .4em; }
   .article-img {
@@ -2457,6 +2420,8 @@ a.list-contacts-item {
     margin: 0 8px 0 0; }
   header .logo {
     max-width: 90px; }
+  header .logo-text {
+    letter-spacing: .4em; }
   .why-company-box {
     font-size: 12px; }
     .why-company-box h4 {
