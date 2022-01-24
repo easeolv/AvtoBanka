@@ -1277,9 +1277,11 @@ h2 {
   .mobile-menu .logo-text {
     text-align: center;
     font-size: 10px;
-    margin: -1px 0 0;
     letter-spacing: .3em;
     text-transform: uppercase; }
+  .mobile-menu .logo-lt .logo-text {
+    font-size: 8px;
+    letter-spacing: .3em; }
   .mobile-menu .menu {
     border-top: 1px solid #276AD6;
     width: 100%;
@@ -1728,8 +1730,12 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 0 30px; }
+  margin: 0 0 30px;
+  height: 450px; }
   .article-img img {
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%; }
 
 .article .box-text {
@@ -1861,7 +1867,10 @@ header {
   display: block;
   font-family: "Raleway", sans-serif;
   width: 100%;
-  margin: 0; }
+  margin: 2px 0 0; }
+
+.logo-lt .logo-text {
+  letter-spacing: .6em; }
 
 .btn-burger {
   display: none;
@@ -2396,7 +2405,13 @@ a.list-contacts-item {
   .article .box-text {
     margin: 0 0 20px; }
   .news-other {
-    margin: 0 0 30px; } }
+    margin: 0 0 30px; }
+  .logo-lt .logo-text {
+    letter-spacing: .4em; }
+  .article-img {
+    height: 300px; }
+  footer .logo-lt .logo-text {
+    letter-spacing: .6em; } }
 
 @media only screen and (max-width: 480px) {
   .lucrative-ransom-box {
@@ -2427,7 +2442,9 @@ a.list-contacts-item {
   .call .form .form-group label {
     width: 100%; }
   .category-auto-box .category-auto-box__img {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .article-img {
+    height: 230px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
@@ -2444,4 +2461,6 @@ a.list-contacts-item {
     .why-company-box h4 {
       font-size: 24px; }
   .category-auto-box .category-auto-box__img {
-    right: -50px; } }
+    right: -50px; }
+  .logo-lt .logo-text {
+    letter-spacing: .2em; } }
