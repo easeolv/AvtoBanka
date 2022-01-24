@@ -17,41 +17,8 @@ header
         margin: 0
   .list-messengers
     margin: 0 24px 0 92px
-  .logo
-    font-size: 40px
-    letter-spacing: 3px
-    font-weight: normal
-  .logo-name
-    text-transform: uppercase
-    font-family: 'AmericanCaptainCyrillic', sans-serif
-    font-style: italic
-    font-weight: normal
-    max-width: 190px
-    width: 100%
-    img
-      width: 100%
-    .color-accent
-      color: #fff
-      position: relative
-      z-index: 1
-      margin: 0 0 0 2px
-      &:before
-        content: ''
-        position: absolute
-        left: -2px
-        top: -4px
-        width: calc(100% + 8px)
-        height: 100%
-        z-index: -1
-        background: $accent
-        transform: skewX(-14deg)
-  .logo-text
-    text-align: center
-    margin: 0
-    font-family: 'BaronNeue', sans-serif
-    display: block
-    font-weight: normal
-    letter-spacing: .3em
+  .links-accent
+    font-weight: 600
 
 
 .dropdown-language
@@ -86,24 +53,23 @@ header
 .logo
   display: flex
   flex-direction: column
-  align-items: flex-end
-  justify-content: flex-start
-  width: fit-content
+  width: 100%
+  max-width: 190px
   color: $color
-  font-size: 32px
-  font-weight: bold
+  font-weight: 500
   &:hover
     color: $accent
 
 .logo-text
-  letter-spacing: 0.2em
-  margin: -8px 0 0
-  font-size: 14px
-  font-weight: normal
+  letter-spacing: 0.4em
+  text-transform: uppercase
+  text-align: center
+  font-size: 10px
   line-height: normal
   display: block
-  text-align: right
   font-family: $default-font
+  width: 100%
+  margin: 0
 
 .btn-burger
   display: none

@@ -108,7 +108,7 @@ $('.btn-burger').on('click', function () {
     $('.mobile-menu').fadeIn();
 });
 
-$('.btn-close').on('click', function () {
+$('.btn-close, .overlay-menu').on('click', function () {
     $('.mobile-menu').fadeOut();
     $('.overlay-menu').fadeOut();
 });

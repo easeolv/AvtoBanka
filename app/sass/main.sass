@@ -193,6 +193,7 @@ h2
   font-size: 16px
   font-family: $default-font
   justify-content: center
+  text-align: center
 
 .breadcrumb-item
   display: flex
@@ -437,9 +438,37 @@ h2
 
 .category-auto-box1
   .category-auto-box__img
-    max-width: 404px
-    right: -64px
-    bottom: -38px
+    max-width: 344px
+    right: -34px
+    bottom: -8px
+
+.category-auto-box2
+  .category-auto-box__img
+    right: -10px
+
+.category-auto-box3
+  .category-auto-box__img
+    right: 0
+    max-width: 307px
+
+
+.category-auto-box4
+  .category-auto-box__img
+    right: 0
+    max-width: 327px
+
+
+.category-auto-box5
+  .category-auto-box__img
+    right: 0
+    max-width: 320px
+    bottom: 20px
+
+.category-auto-box6
+  .category-auto-box__img
+    right: 0
+    max-width: 360px
+    bottom: -14px
 /*==========  category-auto end  ==========*/
 
 /*==========  why-company  ==========*/
@@ -960,6 +989,14 @@ h2
   font-family: $default-font
   font-size: 16px
 
+.iti__flag
+  border-radius: 50%
+  overflow: hidden
+  width: 22px
+  height: 22px !important
+  -webkit-background-size: cover
+  background-size: cover
+
 .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag
   background: transparent
 
@@ -1029,6 +1066,8 @@ h2
   opacity: .2
   display: none
 
+
+
 .mobile-menu
   display: none
   height: 100%
@@ -1047,15 +1086,16 @@ h2
     align-items: center
     justify-content: space-between
   .logo
-    font-size: 20px
+    max-width: 115px
     color: #fff
     .color-accent
       color: #fff
   .logo-text
     text-align: center
     font-size: 10px
-    margin: -4px 0 0
-    letter-spacing: .1em
+    margin: -1px 0 0
+    letter-spacing: .3em
+    text-transform: uppercase
   .menu
     border-top: 1px solid #276AD6
     width: 100%
@@ -1394,6 +1434,30 @@ textarea
 
 
 /*==========  contacts end  ==========*/
+
+
+/*==========  article  ==========*/
+.article-img
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 30px
+  img
+    width: 100%
+
+.article
+  .box-text
+    margin: 0 0 30px
+  h3
+    font-weight: bold
+    margin: 0 0 30px
+
+.news-other
+  margin: 0 0 70px
+/*==========  article end  ==========*/
+
+
 
 @import "header"
 @import "footer"

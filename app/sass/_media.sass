@@ -276,14 +276,6 @@
     padding: 40px 0 30px
 
 @media only screen and (max-width: 576px)
-  .logo
-    font-size: 20px
-
-  .logo-text
-    letter-spacing: .1em
-    font-size: 10px
-    margin: -4px auto 0
-
   h2
     font-size: 30px
     line-height: 30px
@@ -353,13 +345,6 @@
   .footer-bottom
     padding: 10px 0
 
-  footer
-    .logo
-      font-size: 32px
-    .logo-text
-      font-size: 14px
-      text-align: right
-      margin: -7px 0 0
 
   .modal-content
     padding: 30px
@@ -372,23 +357,22 @@
 
   header
     .logo
-      font-size: 19px
+      font-size: 12px
       text-transform: none
-      letter-spacing: 0
-    .logo-name
-      font-family: $default-font
-      font-style: normal
-      font-weight: 800
-      text-transform: none
-      .color-accent
-        color: $accent
-        margin: 0
-        &:before
-          display: none
+      max-width: 111px
+      letter-spacing: .2em
     .logo-text
-      letter-spacing: .1em
-      font-family: $default-font
-      margin: -4px auto 0
+      font-size: 7px
+
+  .article-img
+    margin: 0 0 20px
+
+  .article
+    .box-text
+      margin: 0 0 20px
+
+  .news-other
+    margin: 0 0 30px
 
 @media only screen and (max-width: 480px)
   .lucrative-ransom-box
@@ -440,8 +424,11 @@
   .btn-burger
     margin: 0 0 0 10px
 
-  header .list-messengers li
-    margin: 0 8px 0 0
+  header
+    .list-messengers li
+      margin: 0 8px 0 0
+    .logo
+      max-width: 90px
 
   .why-company-box
     font-size: 12px

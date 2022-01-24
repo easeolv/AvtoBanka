@@ -219,7 +219,8 @@ h2 {
   font-family: "Raleway", sans-serif;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  text-align: center; }
 
 .breadcrumb-item {
   display: -webkit-box;
@@ -507,9 +508,30 @@ h2 {
     max-width: 344px; }
 
 .category-auto-box1 .category-auto-box__img {
-  max-width: 404px;
-  right: -64px;
-  bottom: -38px; }
+  max-width: 344px;
+  right: -34px;
+  bottom: -8px; }
+
+.category-auto-box2 .category-auto-box__img {
+  right: -10px; }
+
+.category-auto-box3 .category-auto-box__img {
+  right: 0;
+  max-width: 307px; }
+
+.category-auto-box4 .category-auto-box__img {
+  right: 0;
+  max-width: 327px; }
+
+.category-auto-box5 .category-auto-box__img {
+  right: 0;
+  max-width: 320px;
+  bottom: 20px; }
+
+.category-auto-box6 .category-auto-box__img {
+  right: 0;
+  max-width: 360px;
+  bottom: -14px; }
 
 /*==========  category-auto end  ==========*/
 /*==========  why-company  ==========*/
@@ -1149,6 +1171,13 @@ h2 {
   font-family: "Raleway", sans-serif;
   font-size: 16px; }
 
+.iti__flag {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 22px;
+  height: 22px !important;
+  background-size: cover; }
+
 .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
   background: transparent; }
 
@@ -1241,15 +1270,16 @@ h2 {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .mobile-menu .logo {
-    font-size: 20px;
+    max-width: 115px;
     color: #fff; }
     .mobile-menu .logo .color-accent {
       color: #fff; }
   .mobile-menu .logo-text {
     text-align: center;
     font-size: 10px;
-    margin: -4px 0 0;
-    letter-spacing: .1em; }
+    margin: -1px 0 0;
+    letter-spacing: .3em;
+    text-transform: uppercase; }
   .mobile-menu .menu {
     border-top: 1px solid #276AD6;
     width: 100%;
@@ -1686,6 +1716,33 @@ textarea {
   border-color: #084DBC; }
 
 /*==========  contacts end  ==========*/
+/*==========  article  ==========*/
+.article-img {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 30px; }
+  .article-img img {
+    width: 100%; }
+
+.article .box-text {
+  margin: 0 0 30px; }
+
+.article h3 {
+  font-weight: bold;
+  margin: 0 0 30px; }
+
+.news-other {
+  margin: 0 0 70px; }
+
+/*==========  article end  ==========*/
 @font-face {
   font-family: "Bebas";
   font-weight: 700;
@@ -1735,42 +1792,8 @@ header {
       margin: 0; }
   header .list-messengers {
     margin: 0 24px 0 92px; }
-  header .logo {
-    font-size: 40px;
-    letter-spacing: 3px;
-    font-weight: normal; }
-  header .logo-name {
-    text-transform: uppercase;
-    font-family: 'AmericanCaptainCyrillic', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    max-width: 190px;
-    width: 100%; }
-    header .logo-name img {
-      width: 100%; }
-    header .logo-name .color-accent {
-      color: #fff;
-      position: relative;
-      z-index: 1;
-      margin: 0 0 0 2px; }
-      header .logo-name .color-accent:before {
-        content: '';
-        position: absolute;
-        left: -2px;
-        top: -4px;
-        width: calc(100% + 8px);
-        height: 100%;
-        z-index: -1;
-        background: #084DBC;
-        -webkit-transform: skewX(-14deg);
-                transform: skewX(-14deg); }
-  header .logo-text {
-    text-align: center;
-    margin: 0;
-    font-family: 'BaronNeue', sans-serif;
-    display: block;
-    font-weight: normal;
-    letter-spacing: .3em; }
+  header .links-accent {
+    font-weight: 600; }
 
 .dropdown-language .dropdown-toggle {
   cursor: pointer;
@@ -1822,30 +1845,23 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
+  max-width: 190px;
   color: #292929;
-  font-size: 32px;
-  font-weight: bold; }
+  font-weight: 500; }
   .logo:hover {
     color: #084DBC; }
 
 .logo-text {
-  letter-spacing: 0.2em;
-  margin: -8px 0 0;
-  font-size: 14px;
-  font-weight: normal;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
   line-height: normal;
   display: block;
-  text-align: right;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  margin: 0; }
 
 .btn-burger {
   display: none;
@@ -2313,12 +2329,6 @@ a.list-contacts-item {
     padding: 40px 0 30px; } }
 
 @media only screen and (max-width: 576px) {
-  .logo {
-    font-size: 20px; }
-  .logo-text {
-    letter-spacing: .1em;
-    font-size: 10px;
-    margin: -4px auto 0; }
   h2 {
     font-size: 30px;
     line-height: 30px; }
@@ -2368,12 +2378,6 @@ a.list-contacts-item {
     margin: 10px auto 0; }
   .footer-bottom {
     padding: 10px 0; }
-  footer .logo {
-    font-size: 32px; }
-  footer .logo-text {
-    font-size: 14px;
-    text-align: right;
-    margin: -7px 0 0; }
   .modal-content {
     padding: 30px; }
   .page {
@@ -2381,23 +2385,18 @@ a.list-contacts-item {
   .breadcrumb-nav {
     margin: 0 auto 15px; }
   header .logo {
-    font-size: 19px;
+    font-size: 12px;
     text-transform: none;
-    letter-spacing: 0; }
-  header .logo-name {
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    text-transform: none; }
-    header .logo-name .color-accent {
-      color: #084DBC;
-      margin: 0; }
-      header .logo-name .color-accent:before {
-        display: none; }
+    max-width: 111px;
+    letter-spacing: .2em; }
   header .logo-text {
-    letter-spacing: .1em;
-    font-family: "Raleway", sans-serif;
-    margin: -4px auto 0; } }
+    font-size: 7px; }
+  .article-img {
+    margin: 0 0 20px; }
+  .article .box-text {
+    margin: 0 0 20px; }
+  .news-other {
+    margin: 0 0 30px; } }
 
 @media only screen and (max-width: 480px) {
   .lucrative-ransom-box {
@@ -2438,6 +2437,8 @@ a.list-contacts-item {
     margin: 0 0 0 10px; }
   header .list-messengers li {
     margin: 0 8px 0 0; }
+  header .logo {
+    max-width: 90px; }
   .why-company-box {
     font-size: 12px; }
     .why-company-box h4 {
