@@ -2375,7 +2375,9 @@ a.list-contacts-item {
   .article-img {
     height: 300px; }
   footer .logo-lt .logo-text {
-    letter-spacing: .6em; } }
+    letter-spacing: .6em; }
+  .logo-lt .logo-text {
+    margin: 3px 0 0; } }
 
 @media only screen and (max-width: 480px) {
   .lucrative-ransom-box {
@@ -2418,8 +2420,6 @@ a.list-contacts-item {
     margin: 0 0 0 10px; }
   header .list-messengers li {
     margin: 0 8px 0 0; }
-  header .logo {
-    max-width: 90px; }
   header .logo-text {
     letter-spacing: .4em; }
   .why-company-box {
@@ -2430,3 +2430,7 @@ a.list-contacts-item {
     right: -50px; }
   .logo-lt .logo-text {
     letter-spacing: .2em; } }
+
+@media only screen and (max-width: 340px) {
+  header .logo {
+    max-width: 90px; } }
