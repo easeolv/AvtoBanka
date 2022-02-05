@@ -1736,6 +1736,90 @@ textarea {
   margin: 0 0 70px; }
 
 /*==========  article end  ==========*/
+/*==========  error page  ==========*/
+.error-page {
+  padding: 75px 0 60px; }
+  .error-page .box-text {
+    margin: 20px 0 40px; }
+
+.error-page-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%; }
+  .error-page-img img {
+    width: 100%; }
+
+.cookie {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background: #084DBC;
+  color: #fff;
+  padding: 12px 0 8px;
+  z-index: 4; }
+  .cookie .box-text {
+    font-size: 16px;
+    line-height: 19px; }
+  .cookie .btn {
+    max-width: 240px;
+    margin: 0 0 0 auto; }
+
+.error-input input {
+  color: #DA2222;
+  border: 1px solid #D80027; }
+  .error-input input::-webkit-input-placeholder {
+    color: #DA2222; }
+  .error-input input::-moz-placeholder {
+    color: #DA2222; }
+  .error-input input::-ms-input-placeholder {
+    color: #DA2222; }
+  .error-input input::placeholder {
+    color: #DA2222; }
+
+.list-maps {
+  width: 100%;
+  padding: 0 0 0 49px;
+  margin: 0 0 12px; }
+  .list-maps li {
+    margin: 0 0 9px; }
+    .list-maps li:last-child {
+      margin: 0; }
+  .list-maps-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: #3685E6; }
+    .list-maps-links:hover {
+      color: #084DBC; }
+    .list-maps-links__icon {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 30px;
+      height: 30px;
+      min-width: 30px;
+      margin: 0 10px 0 0; }
+    .list-maps-links__text {
+      text-decoration: underline; }
+
+/*==========  error page end  ==========*/
 @font-face {
   font-family: "Bebas";
   font-weight: 700;
@@ -2239,7 +2323,17 @@ a.list-contacts-item {
   .call {
     padding: 0 0 60px; }
     .call h2 {
-      text-align: center; } }
+      text-align: center; }
+  .error-page-img {
+    margin: 30px auto 0;
+    max-width: 400px; }
+  .error-page {
+    padding: 40px 0;
+    text-align: center; }
+    .error-page .box-text {
+      margin: 20px auto; }
+    .error-page .btn {
+      margin: 0 auto; } }
 
 @media only screen and (max-width: 768px) {
   h1, .slider-title {
@@ -2297,7 +2391,11 @@ a.list-contacts-item {
   .footer-menu {
     margin: 30px 0 0; }
   .footer-top {
-    padding: 40px 0 30px; } }
+    padding: 40px 0 30px; }
+  .cookie {
+    text-align: center; }
+    .cookie .btn {
+      margin: 10px auto 0; } }
 
 @media only screen and (max-width: 576px) {
   h2 {
@@ -2377,7 +2475,9 @@ a.list-contacts-item {
   footer .logo-lt .logo-text {
     letter-spacing: .6em; }
   .logo-lt .logo-text {
-    margin: 3px 0 0; } }
+    margin: 3px 0 0; }
+  .error-page {
+    padding: 40px 0; } }
 
 @media only screen and (max-width: 480px) {
   .lucrative-ransom-box {
@@ -2427,10 +2527,10 @@ a.list-contacts-item {
     .why-company-box h4 {
       font-size: 24px; }
   .category-auto-box .category-auto-box__img {
-    right: -50px; }
-  .logo-lt .logo-text {
-    letter-spacing: .2em; } }
+    right: -50px; } }
 
 @media only screen and (max-width: 340px) {
   header .logo {
-    max-width: 90px; } }
+    max-width: 90px; }
+  .logo-lt .logo-text {
+    letter-spacing: .2em; } }

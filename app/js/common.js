@@ -137,3 +137,8 @@ $(window).on('load resize', function () {
     }
 });
 // slick active
+
+$('.btn-close-cookie').on('click', function (e) {
+    e.preventDefault();
+    $('.cookie').fadeOut();
+});

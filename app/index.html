@@ -140,9 +140,9 @@
           <div class="row">
             <div class="col-12 col-md-8 col-lg-7">
               <div class="home-slider-content">
-                <div class="slider-title">Выкупим ваше авто <br>
+                <h1 class="slider-title">Выкупим ваше авто <br>
                   по <span class="color-accent">максимальной</span> цене
-                </div>
+                </h1>
 
                 <div class="list-cities">
                   <div class="list-cities-item">
@@ -171,7 +171,7 @@
                   </div>
                 </div>
                 <form method="post" class="form form-callback">
-                  <label>
+                  <label class="error-input">
             <span class="input-country">
               <span class="input-country__icon"><img src="img/es.png" alt=""></span>
               <span class="input-country__text">lv</span>
@@ -179,8 +179,8 @@
                     <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
                   </label>
 
-                  <label>
-                    <input type="tel" class="phone-input phone-input1" placeholder="Телефон">
+                  <label class="error-input">
+                    <input type="tel" class="phone-input phone-input1" placeholder="Введите телефон">
                   </label>
 
                   <button type="submit" class="btn btn-red">Оценить стоимость авто</button>
@@ -1090,6 +1090,23 @@
     </div>
   </div>
 </footer>
+
+
+<div class="cookie">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-8 col-lg-9">
+        <div class="box-text">
+          <p>Этот сайт использует файлы cookie для хранения данных. Продолжая использовать сайт, вы даете свое согласие на работу с этими файлами</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <a href="#" class="btn btn-red btn-close-cookie">Принять</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- Модальное окно -->
 <div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
