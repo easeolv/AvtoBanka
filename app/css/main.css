@@ -1774,7 +1774,9 @@ textarea {
 
 .error-input input {
   color: #DA2222;
-  border: 1px solid #D80027; }
+  border: 1px solid #D80027;
+  -webkit-animation: none;
+          animation: none; }
   .error-input input::-webkit-input-placeholder {
     color: #DA2222; }
   .error-input input::-moz-placeholder {
