@@ -1799,7 +1799,8 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    color: #3685E6; }
+    color: #3685E6;
+    font-weight: 500; }
     .list-maps-links:hover {
       color: #084DBC; }
     .list-maps-links__icon {
@@ -1816,8 +1817,6 @@ textarea {
       height: 30px;
       min-width: 30px;
       margin: 0 10px 0 0; }
-    .list-maps-links__text {
-      text-decoration: underline; }
 
 /*==========  error page end  ==========*/
 @font-face {
