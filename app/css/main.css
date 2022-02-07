@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @font-face {
   font-family: "Bebas";
   font-weight: 700;
@@ -1268,7 +1271,7 @@ h2 {
     font-weight: 500; }
   .mobile-menu .logo-lt .logo-text {
     font-size: 8px;
-    letter-spacing: .3em; }
+    letter-spacing: 4px; }
   .mobile-menu .menu {
     border-top: 1px solid #276AD6;
     width: 100%;
@@ -1772,19 +1775,75 @@ textarea {
     max-width: 240px;
     margin: 0 0 0 auto; }
 
-.error-input input {
-  color: #DA2222;
-  border: 1px solid #D80027;
-  -webkit-animation: none;
-          animation: none; }
-  .error-input input::-webkit-input-placeholder {
-    color: #DA2222; }
-  .error-input input::-moz-placeholder {
-    color: #DA2222; }
-  .error-input input::-ms-input-placeholder {
-    color: #DA2222; }
-  .error-input input::placeholder {
-    color: #DA2222; }
+.error-input {
+  position: relative; }
+  .error-input input {
+    border: 1px solid #D80027;
+    -webkit-animation: none;
+            animation: none; }
+  .error-input .error-tooltip {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.error-tooltip {
+  position: absolute;
+  -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.18);
+  border: 1px solid #DA2222;
+    border-radius: 5px;
+  background: #fff;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 2;
+  padding: 12px;
+  color: #D80027;
+  font-size: 16px;
+  margin: 5px 0 0;
+  top: 100%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  white-space: nowrap; }
+  .error-tooltip:before {
+    content: '';
+    position: absolute;
+    border: 1px solid #DA2222;
+      border-radius: 1px;
+      border-bottom: none;
+      border-right: none;
+    background: #fff;
+    width: 12px;
+    height: 12px;
+    left: 14px;
+    top: -6.5px;
+    z-index: -1;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .error-tooltip__icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    margin: 0 8px 0 0;
+    color: #fff;
+    background: #D80027;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold; }
 
 .list-maps {
   width: 100%;
@@ -1925,12 +1984,12 @@ header {
   font-size: 10px;
   line-height: normal;
   display: inline-block;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
   width: 100%;
   margin: 2px 0 0; }
 
 .logo-lt .logo-text {
-  letter-spacing: .6em;
+  letter-spacing: 9px;
   margin: 5px 0 0; }
 
 .btn-burger {
@@ -2470,11 +2529,11 @@ a.list-contacts-item {
   .logo-text {
     letter-spacing: 5px; }
   .logo-lt .logo-text {
-    letter-spacing: .4em; }
+    letter-spacing: 4.5px; }
   .article-img {
     height: 300px; }
   footer .logo-lt .logo-text {
-    letter-spacing: .6em; }
+    letter-spacing: 9px; }
   .logo-lt .logo-text {
     margin: 3px 0 0; }
   .error-page {
@@ -2534,4 +2593,4 @@ a.list-contacts-item {
   header .logo {
     max-width: 90px; }
   .logo-lt .logo-text {
-    letter-spacing: .2em; } }
+    letter-spacing: 3px; } }
