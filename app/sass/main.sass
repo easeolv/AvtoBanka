@@ -175,13 +175,16 @@ h1
   font-weight: bold
   font-family: $title-font
   margin: 0 auto 30px
+  text-transform: uppercase
 
 h2
   width: 100%
   margin: 0 auto 30px
-  font-size: 50px
-  line-height: 1
+  font-size: 42px
+  //font-size: 50px
+  line-height: normal
   font-weight: bold
+  text-transform: uppercase
   font-family: $title-font
 
 .breadcrumb
@@ -301,10 +304,9 @@ h2
 
 
 .slider-title
-  font-size: 74px
+  font-size: 50px
   font-weight: bold
   font-family: $title-font
-  line-height: 1
 
 .list-cities
   display: flex
@@ -315,9 +317,10 @@ h2
 .list-cities-item
   display: flex
   align-items: flex-start
-  font-size: 30px
+  text-transform: uppercase
+  font-size: 26px
   font-family: $title-font
-  line-height: 1
+  //line-height: 1
   font-weight: 350
   margin: 0 34px 0 0
   &:last-child
@@ -326,7 +329,7 @@ h2
     display: flex
     align-items: center
     justify-content: center
-    margin: -7px 8px 0 0
+    margin: 0 8px 0 0
     width: 30px
     height: 30px
     min-width: 30px
@@ -374,9 +377,9 @@ h2
   height: 60px
   min-width: 60px
   background: $accent
-  font-size: 40px
+  font-size: 36px
   line-height: 1
-  padding: 10px 3px 0 0
+  padding: 0 3px 0 0
   font-weight: bold
   font-family: $title-font
   color: #fff
@@ -502,7 +505,8 @@ h2
   &:last-child
     margin: 0
   h4
-    font-size: 50px
+    text-transform: uppercase
+    font-size: 44px
     font-weight: bold
     color: $accent
     font-family: $title-font
@@ -1576,6 +1580,48 @@ textarea
       margin: 0 10px 0 0
 
 /*==========  error page end  ==========*/
+
+
+/*==========  success-page  ==========*/
+.success-page
+  padding: 40px 0 80px
+  text-align: center
+
+.success-page-icon
+  margin: 0 auto  30px
+  width: fit-content
+
+
+.success-page-content
+  h1
+    margin: 0 auto 10px
+  .btn
+    width: fit-content
+    padding: 0 55px
+    margin: 30px auto 40px
+
+.messengers-box
+  margin: 10px 0 0
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: center
+  .list-messengers
+    margin: 0 0 0 15px
+    li
+      margin: 0 10px 0 0
+
+.font-bold
+  font-weight: bold
+
+.color-black
+  color: #000
+
+a.color-black
+  &:hover
+    color: $accent
+
+/*==========  success-page end  ==========*/
 
 
 
