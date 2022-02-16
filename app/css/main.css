@@ -11,20 +11,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 @font-face {
-  font-family: "Bebas";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/BebasNeue/BebasNeueBold.eot");
-  src: url("../fonts/BebasNeue/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Bebas";
-  font-weight: 350;
-  font-style: normal;
-  src: url("../fonts/BebasNeue/BebasNeueBook.eot");
-  src: url("../fonts/BebasNeue/BebasNeueBook.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBook.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBook.ttf") format("truetype"); }
-
-@font-face {
   font-family: "Gilroy";
   font-weight: 400;
   font-style: normal;
@@ -189,7 +175,8 @@ button, .btn {
 h1 {
   width: 100%;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 66px;
   font-family: "Oswald", sans-serif;
   margin: 0 auto 30px;
   text-transform: uppercase; }
@@ -197,9 +184,8 @@ h1 {
 h2 {
   width: 100%;
   margin: 0 auto 30px;
-  font-size: 42px;
-  line-height: normal;
-  font-weight: bold;
+  font-size: 44px;
+  font-weight: 500;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif; }
 
@@ -326,7 +312,8 @@ h2 {
 
 .slider-title {
   font-size: 50px;
-  font-weight: bold;
+  font-weight: 500;
+  line-height: 66px;
   font-family: "Oswald", sans-serif; }
 
 .list-cities {
@@ -350,7 +337,8 @@ h2 {
   text-transform: uppercase;
   font-size: 26px;
   font-family: "Oswald", sans-serif;
-  font-weight: 350;
+  font-weight: 300;
+  line-height: 39px;
   margin: 0 34px 0 0; }
   .list-cities-item:last-child {
     margin: 0; }
@@ -364,7 +352,7 @@ h2 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin: 0 8px 0 0;
+    margin: 3px 8px 0 0;
     width: 30px;
     height: 30px;
     min-width: 30px;
@@ -429,10 +417,9 @@ h2 {
   height: 60px;
   min-width: 60px;
   background: #084DBC;
-  font-size: 36px;
-  line-height: 1;
+  font-size: 40px;
   padding: 0 3px 0 0;
-  font-weight: bold;
+  font-weight: 500;
   font-family: "Oswald", sans-serif;
   color: #fff;
   margin: 0 0 0 20px;
@@ -568,8 +555,8 @@ h2 {
     margin: 0; }
   .why-company-box h4 {
     text-transform: uppercase;
-    font-size: 44px;
-    font-weight: bold;
+    font-size: 40px;
+    font-weight: 500;
     color: #084DBC;
     font-family: "Oswald", sans-serif; }
 
@@ -766,22 +753,14 @@ h2 {
   height: 330px;
   border-radius: 5px;
   overflow: hidden; }
-  .sell-a-car-video:before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    width: 100%;
-    height: 100%; }
   .sell-a-car-video__img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+  .sell-a-car-video iframe {
+    width: 100%;
+    height: 100%; }
 
 .btn-play {
   display: -webkit-box;
@@ -1709,8 +1688,9 @@ textarea {
   cursor: pointer; }
 
 .inp-checkbox:checked + .checkbox-custom {
-  background: #084DBC;
-  border-color: #084DBC; }
+  background: url("../img/checked.svg") no-repeat center;
+    background-size: 100%;
+  border-color: transparent; }
 
 /*==========  contacts end  ==========*/
 /*==========  article  ==========*/
@@ -1935,20 +1915,6 @@ a.color-black:hover {
 
 /*==========  success-page end  ==========*/
 @font-face {
-  font-family: "Bebas";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/BebasNeue/BebasNeueBold.eot");
-  src: url("../fonts/BebasNeue/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Bebas";
-  font-weight: 350;
-  font-style: normal;
-  src: url("../fonts/BebasNeue/BebasNeueBook.eot");
-  src: url("../fonts/BebasNeue/BebasNeueBook.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBook.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBook.ttf") format("truetype"); }
-
-@font-face {
   font-family: "Gilroy";
   font-weight: 400;
   font-style: normal;
@@ -2107,20 +2073,6 @@ header {
         color: #084DBC; }
 
 /*==========  header end  ==========*/
-@font-face {
-  font-family: "Bebas";
-  font-weight: 700;
-  font-style: normal;
-  src: url("../fonts/BebasNeue/BebasNeueBold.eot");
-  src: url("../fonts/BebasNeue/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBold.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBold.ttf") format("truetype"); }
-
-@font-face {
-  font-family: "Bebas";
-  font-weight: 350;
-  font-style: normal;
-  src: url("../fonts/BebasNeue/BebasNeueBook.eot");
-  src: url("../fonts/BebasNeue/BebasNeueBook.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue/BebasNeueBook.woff") format("woff"), url("../fonts/BebasNeue/BebasNeueBook.ttf") format("truetype"); }
-
 @font-face {
   font-family: "Gilroy";
   font-weight: 400;
@@ -2321,7 +2273,8 @@ a.list-contacts-item {
   .home-slider__img {
     min-width: 600px; }
   h1, .slider-title {
-    font-size: 40px; }
+    font-size: 40px;
+    line-height: normal; }
   .list-cities-item {
     font-size: 26px;
     margin: 0 30px 0 0; }
@@ -2590,7 +2543,13 @@ a.list-contacts-item {
   .success-page {
     padding: 30px 0; }
   h1, .slider-title {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .list-cities-item {
+    font-size: 20px; }
+  h2 {
+    font-size: 25px; }
+  .why-company-box h4 {
+    font-size: 22px; } }
 
 @media only screen and (max-width: 480px) {
   .lucrative-ransom-box {
@@ -2625,9 +2584,7 @@ a.list-contacts-item {
   .category-auto-box .category-auto-box__img {
     max-width: 300px; }
   .article-img {
-    height: 230px; }
-  .why-company-box h4 {
-    font-size: 20px; } }
+    height: 230px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
