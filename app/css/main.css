@@ -311,9 +311,17 @@ h2 {
   margin: 0 0 74px; }
 
 .slider-title {
-  font-size: 50px;
+  font-size: 52px;
   font-weight: 500;
   line-height: 66px;
+  font-family: "Oswald", sans-serif;
+  margin: 0; }
+
+.subtitle {
+  font-size: 38px;
+  line-height: 66px;
+  font-weight: 300;
+  text-transform: uppercase;
   font-family: "Oswald", sans-serif; }
 
 .list-cities {
@@ -366,8 +374,8 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 921px;
-  margin: 18px 0 0 -265px; }
+  min-width: 882px;
+  margin: 18px 0 0 -315px; }
   .home-slider__img img {
     width: 100%; }
 
@@ -1936,7 +1944,8 @@ header {
   header .list-messengers {
     margin: 0 24px 0 92px; }
   header .links-accent {
-    font-weight: 600; }
+    font-weight: 600;
+    text-align: center; }
 
 .dropdown-language .dropdown-toggle {
   cursor: pointer;
@@ -2275,6 +2284,9 @@ a.list-contacts-item {
   h1, .slider-title {
     font-size: 40px;
     line-height: normal; }
+  .subtitle {
+    font-size: 24px;
+    line-height: normal; }
   .list-cities-item {
     font-size: 26px;
     margin: 0 30px 0 0; }
@@ -2403,6 +2415,8 @@ a.list-contacts-item {
 
 @media only screen and (max-width: 768px) {
   h1, .slider-title {
+    text-align: center; }
+  .subtitle {
     text-align: center; }
   .home-slider__img {
     min-width: auto;
@@ -2544,6 +2558,11 @@ a.list-contacts-item {
     padding: 30px 0; }
   h1, .slider-title {
     font-size: 30px; }
+  .subtitle {
+    font-size: 20px; }
+  .slider-title-lt {
+    font-size: 27px;
+    line-height: 40px; }
   .list-cities-item {
     font-size: 20px; }
   h2 {
@@ -2601,10 +2620,14 @@ a.list-contacts-item {
     .why-company-box h4 {
       font-size: 16px; }
   .category-auto-box .category-auto-box__img {
-    right: -50px; } }
+    right: -50px; }
+  .slider-title-lt {
+    font-size: 25px; } }
 
 @media only screen and (max-width: 340px) {
   header .logo {
     max-width: 90px; }
   .logo-lt .logo-text {
-    letter-spacing: .2em; } }
+    letter-spacing: .2em; }
+  .slider-title-lt {
+    font-size: 24px; } }
