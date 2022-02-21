@@ -5,11 +5,11 @@ $(document).ready(function () {
         defaultCountry: 'auto'
     });
 
-    var input2 = document.querySelector(".phone-input2");
-    window.intlTelInput(input2, {
-        separateDialCode: true,
-        defaultCountry: 'auto'
-    });
+    // var input2 = document.querySelector(".phone-input2");
+    // window.intlTelInput(input2, {
+    //     separateDialCode: true,
+    //     defaultCountry: 'auto'
+    // });
 
     var input3 = document.querySelector(".phone-input3");
     window.intlTelInput(input3, {
