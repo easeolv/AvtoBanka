@@ -65,6 +65,9 @@ body {
 html, body {
   overflow-x: hidden; }
 
+html {
+  overflow-y: scroll; }
+
 img {
   display: block;
   max-width: 100%;
