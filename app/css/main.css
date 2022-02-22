@@ -61,7 +61,7 @@ body {
   color: #292929;
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
           font-feature-settings: 'pnum' on, 'lnum' on;
-  padding: 0; }
+  padding: 0 !important; }
 
 html, body {
   overflow-x: hidden; }
@@ -1343,7 +1343,7 @@ h2 {
 /*==========  mobile menu end  ==========*/
 /*==========  modal  ==========*/
 .modal {
-  padding: 0; }
+  padding: 0 !important; }
 
 .modal-dialog {
   max-width: 520px; }
