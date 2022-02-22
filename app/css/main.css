@@ -60,13 +60,11 @@ body {
   background: #fff;
   color: #292929;
   -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
-          font-feature-settings: 'pnum' on, 'lnum' on; }
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  padding: 0; }
 
 html, body {
   overflow-x: hidden; }
-
-html {
-  overflow-y: scroll; }
 
 img {
   display: block;
