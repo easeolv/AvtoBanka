@@ -142,3 +142,11 @@ $('.btn-close-cookie').on('click', function (e) {
     e.preventDefault();
     $('.cookie').fadeOut();
 });
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 65) {
+        $('header').addClass('fixed');
+    } else {
+        $('header').removeClass('fixed');
+    }
+});

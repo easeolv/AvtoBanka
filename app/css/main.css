@@ -2616,9 +2616,13 @@ a.list-contacts-item {
     top: 0;
     width: 100%;
     z-index: 3;
+    background: transparent; }
+  header.fixed, .header.fixed {
     background: #fff; }
-  body {
-    padding: 63px 0 0; } }
+  .home {
+    padding: 132px 0 18px; }
+  .page {
+    padding-top: 72px; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 360px) {
