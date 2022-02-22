@@ -1342,6 +1342,9 @@ h2 {
 
 /*==========  mobile menu end  ==========*/
 /*==========  modal  ==========*/
+.modal {
+  padding: 0; }
+
 .modal-dialog {
   max-width: 520px; }
 
@@ -1391,8 +1394,7 @@ h2 {
 .modal-title {
   text-align: center;
   margin: 0 auto;
-  line-height: 1;
-  max-width: 300px; }
+  line-height: 1; }
 
 .modal-body {
   padding: 10px 0 0; }
