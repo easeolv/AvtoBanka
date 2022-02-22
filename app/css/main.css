@@ -1178,6 +1178,7 @@ h2 {
 
 .iti__country-list--dropup, .iti__country-list {
   max-width: 330px;
+  min-width: 330px;
   margin: 5px 0 0;
   border: 1px solid #C4C4C4;
     border-radius: 5px;
@@ -2619,8 +2620,6 @@ a.list-contacts-item {
     background: transparent; }
   header.fixed, .header.fixed {
     background: #fff; }
-  .home {
-    padding: 132px 0 18px; }
   .page {
     padding-top: 72px; } }
 
@@ -2641,7 +2640,9 @@ a.list-contacts-item {
   .category-auto-box .category-auto-box__img {
     right: -50px; }
   .slider-title-lt {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .iti__country-list--dropup, .iti__country-list {
+    min-width: 290px; } }
 
 @media only screen and (max-width: 340px) {
   header .logo {
