@@ -1398,6 +1398,9 @@ h2 {
 
 .modal-body {
   padding: 10px 0 0; }
+  .modal-body .iti__country-list--dropup, .modal-body .iti__country-list {
+    min-width: 300px;
+    max-width: 300px; }
 
 .modal-backdrop.show {
   opacity: .2; }
@@ -1428,6 +1431,12 @@ h2 {
 #thanksModal .btn {
   max-width: 200px;
   margin: 0 auto; }
+
+.modal-dialog-scrollable .modal-content {
+  overflow: visible; }
+
+.modal-dialog-scrollable .modal-body {
+  overflow-y: visible; }
 
 /*==========  modal end  ==========*/
 .page {
@@ -2655,4 +2664,7 @@ a.list-contacts-item {
   .slider-title-lt {
     font-size: 24px; }
   .page {
-    padding-top: 60px; } }
+    padding-top: 60px; }
+  .modal-body .iti__country-list--dropup, .modal-body .iti__country-list {
+    min-width: 250px;
+    max-width: 250px; } }
