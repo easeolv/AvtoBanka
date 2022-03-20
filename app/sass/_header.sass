@@ -16,7 +16,7 @@ header
       &:last-child
         margin: 0
   .list-messengers
-    margin: 0 24px 0 92px
+    margin: 0 24px 0 49px
   .links-accent
     font-weight: 600
     text-align: center
@@ -120,12 +120,29 @@ header
   flex-wrap: wrap
   margin: 0 auto
   li
-    margin: 0 50px 0 0
+    margin: 0 30px 0 0
     &:last-child
       margin: 0
     a
       color: $color
       &:hover
         color: $accent
+  .dropdown-toggle
+    cursor: pointer
+    display: flex
+    align-items: center
+    &:after
+      border: none
+      margin: 0 0 0 10px
+      width: 8px
+      height: 4px
+      background: url("../img/arrow-bottom.svg") no-repeat center
+        size: 100%
+  .dropdown-item
+    padding: 10px 20px
+  .dropdown-menu
+    padding: 0
+    margin: 16px 0 0
+    min-width: 260px
 
 /*==========  header end  ==========*/

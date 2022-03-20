@@ -29,11 +29,10 @@
 
 <div class="mobile-menu">
   <div class="mobile-menu__head">
-
     <h2>
-      <a href="index.html" class="logo logo-lt">
+      <a href="index.html" class="logo">
         <span class="logo-name"><img src="img/logo-mobile.svg" alt=""></span>
-        <span class="logo-text">auto uzpirkšana</span>
+        <span class="logo-text">выкуп авто</span>
       </a>
     </h2>
     <div class="btn-close">
@@ -46,6 +45,13 @@
     <ul class="menu">
       <li><a href="about.html">О нас</a></li>
       <li><a href="news.html">Новости</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">Что выкупаем</a>
+        <div class="dropdown-menu">
+          <a href="mark.html" class="dropdown-item">По маркам автомобилей</a>
+          <a href="type-car.html" class="dropdown-item">По типу автомобилей</a>
+        </div>
+      </li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
 
@@ -74,13 +80,21 @@
       <div class="col-12 d-flex flex-wrap align-items-center">
 
         <h2>
-          <a href="index.html" class="logo logo-lt">
+          <a href="index.html" class="logo">
             <span class="logo-name"><img src="img/logo.svg" alt=""></span>
-            <span class="logo-text">auto uzpirksana</span>
+            <span class="logo-text">выкуп авто</span>
           </a>
         </h2>
+
         <ul class="menu">
           <li><a href="about.html">О нас</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">Что выкупаем</a>
+            <div class="dropdown-menu">
+              <a href="mark.html" class="dropdown-item">По маркам автомобилей</a>
+              <a href="type-car.html" class="dropdown-item">По типу автомобилей</a>
+            </div>
+          </li>
           <li><a href="news.html">Новости</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
@@ -142,200 +156,113 @@
 </header>
 
 
-<section class="page news">
+<section class="page news mark-section type-car-section">
   <div class="container">
     <div class="row">
       <div class="col-12">
         <nav aria-label="breadcrumb" class="breadcrumb-nav">
           <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">Главная</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Новости</li>
+            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Что выкупаем</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Типы выкупаемых автомобилей</li>
           </ol>
         </nav>
       </div>
-      <div class="col-12 text-center"><h1>новости</h1></div>
+      <div class="col-12 text-center"><h1>Выкупаем <span class="color-accent">любые</span> типы авто</h1></div>
     </div>
 
     <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img"><img src="img/news1.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="article.html" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="article.html" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box1">
+          <span class="type-car-box__name">Выкуп новых <br>автомобилей</span>
+          <span class="type-car-box__img"><img src="img/category1.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="article.html" class="news-card__img"><img src="img/news2.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="article.html" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="article.html" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box2">
+          <span class="type-car-box__name">Выкуп дорогих <br>
+автомобилей
+</span>
+          <span class="type-car-box__img"><img src="img/category6.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news3.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box3">
+          <span class="type-car-box__name">Выкуп старых(ретро) <br>
+автомобилей
+</span>
+          <span class="type-car-box__img"><img src="img/category7.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news4.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box4">
+          <span class="type-car-box__name">Выкуп коммерческих <br>
+автомобилей
+</span>
+          <span class="type-car-box__img"><img src="img/category2.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news5.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box5">
+          <span class="type-car-box__name">Выкуп автомобилей <br>
+с пробегом
+</span>
+          <span class="type-car-box__img"><img src="img/category8.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news6.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box6">
+          <span class="type-car-box__name">Выкуп автомобилей <br>
+в залоге
+</span>
+          <span class="type-car-box__img"><img src="img/category5.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news7.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box7">
+          <span class="type-car-box__name">Выкуп нерастаможенных <br>
+автомобилей
+</span>
+          <span class="type-car-box__img"><img src="img/category9.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news8.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box8">
+          <span class="type-car-box__name">Выкуп неисправных <br>
+автомобилей не на ходу</span>
+          <span class="type-car-box__img"><img src="img/category10.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news9.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box9">
+          <span class="type-car-box__name">Выкуп кредитных <br>
+автомобилей
+</span>
+          <span class="type-car-box__img"><img src="img/category4.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news10.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box10">
+          <span class="type-car-box__name">Выкуп грузовых <br>
+автомобилей
+</span>
+          <span class="type-car-box__img"><img src="img/category11.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news11.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box11">
+          <span class="type-car-box__name">Выкуп битых <br>
+автомобилей
+</span>
+          <span class="type-car-box__img"><img src="img/category3.png" alt=""></span>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 mb-30">
-        <div class="news-card">
-          <a href="#" class="news-card__img"><img src="img/news12.png" alt=""></a>
-          <div class="news-card__body">
-            <div class="news-card__date">29.08.2020</div>
-            <a href="#" class="news-card__title">Тормозная система - на первом месте в списке безопасности
-              автомобиля!</a>
-            <a href="#" class="details-links">
-              <span class="details-links__text">Читать далее</span>
-              <span class="details-links__icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-links"></use></svg></span>
-            </a>
-          </div>
-        </div>
+      <div class="col-12 col-md-6 col-lg-4 mb-20">
+        <a href="type-car-page.html" class="type-car-box type-car-box12">
+          <span class="type-car-box__name">Выкуп китайских <br>
+автомобилей </span>
+          <span class="type-car-box__img"><img src="img/category12.png" alt=""></span>
+        </a>
       </div>
     </div>
   </div>

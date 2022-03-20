@@ -357,6 +357,9 @@ h2
 /*==========  home end  ==========*/
 
 /*==========  scheme  ==========*/
+.scheme
+  padding: 60px 0
+
 .scheme-wrapper
   display: flex
   align-items: center
@@ -1133,7 +1136,25 @@ h2
         padding: 15px 0
         color: #fff
         &:hover
-          color: $color
+          color: #fff
+
+    .dropdown-toggle
+      &:after
+        background: url("../img/arrow-bottom-white.svg") no-repeat center
+          size: 100%
+    .dropdown-menu
+      position: relative !important
+      background: transparent
+      border: none
+        radius: 0
+      top: 0 !important
+      left: 0 !important
+      transform: none !important
+      min-width: auto
+      margin: 0 0 7px
+      width: 100%
+    .dropdown-item
+      padding: 7px 10px
   &__body
     padding: 25px 0 0
     width: 100%
@@ -1650,6 +1671,157 @@ a.color-black
     color: $accent
 
 /*==========  success-page end  ==========*/
+
+
+/*==========  mark page  ==========*/
+.mark-section
+  h1
+    margin: 0 auto 40px
+
+.mark-box
+  display: flex
+  align-items: center
+  color: #292929
+  font-size: 16px
+  max-width: 308px
+  width: 100%
+  line-height: 140%
+  &:hover
+    color: $accent
+  &__img
+    width: 133px
+    display: flex
+    align-items: center
+    justify-content: center
+  &__name
+    width: calc(100% - 133px)
+    padding: 0 0 0 20px
+
+.home-mark
+  .home-slider__img
+    min-width: auto
+    width: 100%
+    max-width: 500px
+    margin: -20px auto 20px 10px
+
+.ransom-auto, .mark-type
+  h2
+    margin: 0 auto 40px
+
+.mark-type-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 -10px
+
+.mark-type-box
+  padding: 0 10px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 0 20px
+  width: 10%
+
+.type-car-box
+  width: 100%
+  position: relative
+  height: 240px
+  overflow: hidden
+  border: 1px solid #DCE0E7
+    radius: 5px
+  background: #fff
+  padding: 30px
+  font-size: 20px
+  font-weight: bold
+  color: $accent
+  z-index: 1
+  &__img
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    width: 100%
+    z-index: -1
+
+.type-car-box1
+  .type-car-box__img
+    right: 0
+    bottom: -8px
+    max-width: 324px
+
+.type-car-box2
+  .type-car-box__img
+    max-width: 353px
+    bottom: 0
+    right: 0
+
+.type-car-box3
+  .type-car-box__img
+    bottom: 7px
+    right: 7px
+    max-width: 300px
+
+.type-car-box4
+  .type-car-box__img
+    max-width: 314px
+    bottom: 0
+    right: 3px
+
+.type-car-box5
+  .type-car-box__img
+    max-width: 367px
+    right: 0
+    bottom: 0
+
+.type-car-box6
+  .type-car-box__img
+    max-width: 350px
+    bottom: 9px
+    right: 0
+
+.type-car-box7
+  .type-car-box__img
+    max-width: 345px
+    right: 0
+    bottom: 0
+
+.type-car-box8
+  .type-car-box__img
+    bottom: 0
+    right: 0
+    max-width: 350px
+
+.type-car-box9
+  .type-car-box__img
+    max-width: 320px
+    bottom: 4px
+    right: 0
+
+.type-car-box10
+  .type-car-box__img
+    max-width: 327px
+    bottom: 0
+    right: 0
+
+
+.type-car-box11
+  .type-car-box__img
+    bottom: -10px
+    right: -6px
+    max-width: 307px
+
+
+.type-car-box12
+  .type-car-box__img
+    bottom: 5px
+    right: 15px
+    max-width: 322px
+
+.home-type
+  .home-slider__img
+    min-width: 948px
+    margin: -60px -277px 0 -210px
+/*==========  mark page end  ==========*/
 
 
 
