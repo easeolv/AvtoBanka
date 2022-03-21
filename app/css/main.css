@@ -2826,7 +2826,9 @@ a.list-contacts-item {
     background: #F4F6FA;
     padding: 60px 0; }
     .ransom-auto .box-text {
-      margin: 0 0 10px; } }
+      margin: 0 0 10px; }
+  .mark-box {
+    margin: 0 auto; } }
 
 @media only screen and (max-width: 480px) {
   h1, .slider-title {
