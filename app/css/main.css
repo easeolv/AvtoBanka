@@ -2723,7 +2723,7 @@ a.list-contacts-item {
     min-width: auto;
     margin: 18px auto 0; }
   .home-mark .home-slider__img {
-    max-width: 350px; } }
+    max-width: 270px; } }
 
 @media only screen and (max-width: 576px) {
   .category-auto {
@@ -2823,6 +2823,9 @@ a.list-contacts-item {
     margin: 0 auto 30px; }
   .mark-section .mb-20 {
     margin-bottom: 15px; }
+  .home:before {
+    background: url("../img/bg1-mobile.jpg") no-repeat center;
+      background-size: cover; }
   .home-mark .home-slider__img {
     max-width: 200px; }
   .mark-type-box {
@@ -2836,7 +2839,9 @@ a.list-contacts-item {
     .ransom-auto .box-text {
       margin: 0 0 10px; }
   .mark-box {
-    margin: 0 auto; } }
+    margin: 0 auto; }
+  .scheme {
+    padding: 50px 0; } }
 
 @media only screen and (max-width: 480px) {
   h1, .slider-title {
