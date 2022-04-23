@@ -2743,11 +2743,11 @@ a.list-contacts-item {
     max-width: 700px;
     margin: 0 -277px 0 -100px; }
   .form-success label {
-    margin: 0 0 20px;
+    margin: 0 0 11px;
     height: auto;
     min-height: 102px; }
   .form-success button {
-    margin: 0 auto 40px; } }
+    margin: 10px auto 40px; } }
 
 @media only screen and (max-width: 768px) {
   h1, .slider-title {
