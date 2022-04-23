@@ -149,11 +149,54 @@
         <div class="success-page-content">
           <div class="success-page-icon"><img src="img/checked.svg" alt=""></div>
           <h1>заявка <span class="color-accent">отправлена</span></h1>
-          <div class="box-text">
-            <p>В ближайшее время с вами свяжется наш менеджер</p>
-          </div>
 
-          <a href="index.html" class="btn btn-red">На главную</a>
+          <form method="post" class="form form-success">
+            <h3>Как вы хотите чтобы мы связались с вами?</h3>
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+                <label class="radio">
+                  <input type="radio" class="inp-radio" name="radio" checked>
+                  <span class="radio-custom"></span>
+                  <span class="radio-text">
+                    <span class="radio-text__title">Позвоните мне</span>
+                    <span class="radio-text__content">
+                      <span>+371 29-838-705</span>
+                       <a href="#" class="color-accent links-edit">Изменить</a>
+                    </span>
+                  </span>
+                </label>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <label class="radio">
+                  <input type="radio" class="inp-radio" name="radio">
+                  <span class="radio-custom"></span>
+
+                  <span class="radio-text">
+                    <span class="radio-text__title">Отправьте СМС</span>
+                    <span class="radio-text__content">
+                      <span>+371 29-838-705</span>
+                      <a href="#" class="color-accent links-edit">Изменить</a>
+                    </span>
+                  </span>
+                </label>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+                <label class="radio">
+                  <input type="radio" class="inp-radio" name="radio">
+                  <span class="radio-custom"></span>
+                  <span class="radio-text">
+                    <span class="radio-text__title">По электронной почте</span>
+                    <span class="radio-text__content">
+                      <input type="text" name="mail" placeholder="Введите E-mail">
+                    </span>
+                  </span>
+                </label>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-red">Сохранить выбор</button>
+              </div>
+            </div>
+          </form>
 
           <div class="box-text">
             <p>Если у вас возникли какие то вопросы, можете связаться с нами по номеру <a href="tel:+371 29-838-705"

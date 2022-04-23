@@ -1962,6 +1962,96 @@ textarea {
 a.color-black:hover {
   color: #084DBC; }
 
+.form-success {
+  margin: 40px auto 0; }
+  .form-success h3 {
+    margin: 0 auto 20px;
+    font-weight: bold; }
+  .form-success label {
+    max-width: none;
+    width: 100%; }
+  .form-success button {
+    margin: 20px auto 40px; }
+
+.radio {
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  position: relative;
+  padding: 24px 24px 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer; }
+
+.inp-radio {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: transparent;
+  z-index: -1; }
+
+.radio-custom {
+  border: 1px solid #C4C4C4;
+    border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin: 0 12px 0 0;
+  padding: 0;
+  position: relative; }
+  .radio-custom:before {
+    content: '';
+    position: absolute;
+    background: #084DBC;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: none; }
+
+.inp-radio:checked {
+  border: 1px solid #084DBC; }
+  .inp-radio:checked + .radio-custom:before {
+    display: block; }
+
+.radio-text {
+  display: inline-block;
+  text-align: left; }
+  .radio-text span {
+    display: inline-block; }
+  .radio-text input {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    margin: 10px 0 0; }
+
+.radio-text__content {
+  margin: 12px 0 0;
+  text-align: left; }
+
+.links-edit {
+  display: inline-block;
+  text-decoration: underline;
+  color: #084DBC;
+  margin: 0 0 0 10px; }
+
+.radio-text__title {
+  width: 100%;
+  display: block; }
+
 /*==========  success-page end  ==========*/
 /*==========  mark page  ==========*/
 .mark-section h1 {
@@ -2651,7 +2741,13 @@ a.list-contacts-item {
   .home-type .home-slider__img {
     min-width: 700px;
     max-width: 700px;
-    margin: 0 -277px 0 -100px; } }
+    margin: 0 -277px 0 -100px; }
+  .form-success label {
+    margin: 0 0 20px;
+    height: auto;
+    min-height: 102px; }
+  .form-success button {
+    margin: 0 auto 40px; } }
 
 @media only screen and (max-width: 768px) {
   h1, .slider-title {
