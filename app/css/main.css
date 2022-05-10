@@ -1968,12 +1968,34 @@ a.color-black:hover {
     margin: 0 auto 20px;
     font-weight: bold; }
   .form-success label {
-    max-width: 300px;
+    max-width: 220px;
     width: 100%;
     height: auto;
-    margin: 0 5px 11px; }
+    margin: 0 10px 11px; }
     .form-success label input {
       margin: 0; }
+  .form-success .radio {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .form-success .radio-mail {
+    max-width: 479px; }
+    .form-success .radio-mail .radio-text {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .form-success .radio-mail .radio-text__title {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
+    .form-success .radio-mail .radio-text__content {
+      margin: 0 0 0 15px;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
   .form-success button.btn {
     margin: 9px auto 40px; }
   .form-success .form-group {
@@ -2009,7 +2031,7 @@ a.color-black:hover {
   width: 100%;
   max-width: none;
   position: relative;
-  padding: 23px 24px;
+  padding: 13px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2781,6 +2803,8 @@ a.list-contacts-item {
   .form-success label {
     margin: 0 5px 11px;
     max-width: 32%; }
+  .form-success .radio-mail {
+    max-width: 65%; }
   .form-success button {
     margin: 9px auto 40px; } }
 
@@ -2856,7 +2880,9 @@ a.list-contacts-item {
   .home-mark .home-slider__img {
     max-width: 270px; }
   .form-success label {
-    max-width: 48%; } }
+    max-width: 48%; }
+  .form-success .radio-mail {
+    max-width: 98%; } }
 
 @media only screen and (max-width: 576px) {
   .category-auto {
@@ -2977,7 +3003,20 @@ a.list-contacts-item {
     padding: 50px 0; }
   .form-success label {
     max-width: 100%;
-    margin: 0 auto 11px; } }
+    margin: 0 auto 11px; }
+  .form-success .radio {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .form-success .radio-mail {
+    max-width: 100%; }
+    .form-success .radio-mail .radio-text {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      .form-success .radio-mail .radio-text__content {
+        width: 100%;
+        max-width: 100%;
+        margin: 5px 0 0; } }
 
 @media only screen and (max-width: 480px) {
   h1, .slider-title {

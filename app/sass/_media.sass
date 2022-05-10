@@ -250,6 +250,8 @@
     label
       margin: 0 5px 11px
       max-width: 32%
+    .radio-mail
+      max-width: 65%
     button
       margin: 9px auto 40px
 
@@ -348,6 +350,8 @@
     label
       //min-height: 102px
       max-width: 48%
+    .radio-mail
+      max-width: 98%
 
 
 @media only screen and (max-width: 576px)
@@ -521,9 +525,20 @@
   .scheme
     padding: 50px 0
 
-  .form-success label
-    max-width: 100%
-    margin: 0 auto 11px
+  .form-success
+    label
+      max-width: 100%
+      margin: 0 auto 11px
+    .radio
+      align-items: flex-start
+    .radio-mail
+      max-width: 100%
+      .radio-text
+        flex-wrap: wrap
+        &__content
+          width: 100%
+          max-width: 100%
+          margin: 5px 0 0
 
 @media only screen and (max-width: 480px)
   h1, .slider-title
