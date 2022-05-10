@@ -1989,11 +1989,27 @@ a.color-black:hover {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
 
+#thanks-successModal .modal-dialog {
+  max-width: 480px; }
+
+#thanks-successModal .modal-content {
+  padding: 80px 34px 50px; }
+
+#thanks-successModal h2 {
+  font-size: 38px; }
+
+#thanks-successModal .btn {
+  max-width: 170px;
+  margin: 30px auto 0; }
+
+#thanks-successModal .box-text {
+  text-align: center; }
+
 .radio {
   width: 100%;
   max-width: none;
   position: relative;
-  padding: 22px 24px 12px;
+  padding: 23px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2840,7 +2856,6 @@ a.list-contacts-item {
   .home-mark .home-slider__img {
     max-width: 270px; }
   .form-success label {
-    min-height: 102px;
     max-width: 48%; } }
 
 @media only screen and (max-width: 576px) {
@@ -2933,7 +2948,7 @@ a.list-contacts-item {
     line-height: 40px; }
   .list-cities-item {
     font-size: 20px; }
-  h2 {
+  h2, #thanks-successModal h2 {
     font-size: 25px; }
   .why-company-box h4 {
     font-size: 22px; }

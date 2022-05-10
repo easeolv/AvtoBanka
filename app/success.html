@@ -162,10 +162,10 @@
                 <span class="radio-custom"></span>
                 <span class="radio-text">
                     <span class="radio-text__title">Позвоните мне</span>
-                    <span class="radio-text__content">
-                      <span>+371 29-838-705</span>
-                      <!--                       <a href="#" class="color-accent links-edit">Изменить</a>-->
-                    </span>
+<!--                    <span class="radio-text__content">-->
+<!--                      <span>+371 29-838-705</span>-->
+<!--                      &lt;!&ndash;                       <a href="#" class="color-accent links-edit">Изменить</a>&ndash;&gt;-->
+<!--                    </span>-->
                   </span>
               </label>
               <label class="radio">
@@ -174,10 +174,10 @@
 
                 <span class="radio-text">
                     <span class="radio-text__title">Отправьте СМС</span>
-                    <span class="radio-text__content">
-                      <span>+371 29-838-705</span>
-                      <!--                      <a href="#" class="color-accent links-edit">Изменить</a>-->
-                    </span>
+<!--                    <span class="radio-text__content">-->
+<!--                      <span>+371 29-838-705</span>-->
+<!--                      &lt;!&ndash;                      <a href="#" class="color-accent links-edit">Изменить</a>&ndash;&gt;-->
+<!--                    </span>-->
                   </span>
               </label>
               <label class="radio">
@@ -185,13 +185,13 @@
                 <span class="radio-custom"></span>
                 <span class="radio-text">
                     <span class="radio-text__title">По электронной почте</span>
-                    <span class="radio-text__content">
-                      <input type="text" name="mail" placeholder="Введите E-mail">
-                    </span>
+<!--                    <span class="radio-text__content">-->
+<!--                      <input type="text" name="mail" placeholder="Введите E-mail">-->
+<!--                    </span>-->
                   </span>
               </label>
             </div>
-            <button type="submit" class="btn btn-red">Сохранить выбор</button>
+            <button type="button" class="btn btn-red" data-toggle="modal" data-target="#thanks-successModal">Сохранить выбор</button>
           </form>
 
           <div class="box-text">
@@ -403,6 +403,28 @@
           <p>В ближайшее время с вами свяжется наш менеджер</p>
         </div>
         <button type="button" class="btn btn-red" data-dismiss="modal">ОК</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanks-successModal" tabindex="-1" aria-labelledby="thanks-successModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">способ связи <span class="color-accent">сохранен</span></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+
+        <div class="box-text">
+          <p>Наш менеджер свяжется с вами в ближайшее время</p>
+        </div>
+        <a href="index.html" class="btn btn-red">На главную</a>
       </div>
     </div>
   </div>
