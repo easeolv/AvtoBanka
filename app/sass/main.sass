@@ -301,6 +301,9 @@ h2
     label
       width: 100%
       margin: 0 0 10px
+    .label-file
+      box-shadow: 0px 4px 20px rgba(7, 35, 92, 0.15)
+
 
 .home-slider-content
   margin: 0 0 114px
@@ -334,7 +337,6 @@ h2
   text-transform: uppercase
   font-size: 26px
   font-family: $title-font
-  //line-height: 1
   font-weight: 300
   line-height: 39px
   margin: 0 34px 0 0
@@ -358,6 +360,33 @@ h2
   margin: 38px 0 0 -315px
   img
     width: 100%
+
+.label-file
+  width: 100%
+  max-width: 380px
+
+  border: 1px dashed #084DBC
+    radius: 5px
+  background: #fff
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  color: #084DBC
+  font-size: 16px
+  padding: 17px 10px
+  margin: 19px auto 0
+  &__icon
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 11px 0 0
+    max-width: 29px
+    width: 100%
+
+.inp-file
+  display: none
 /*==========  home end  ==========*/
 
 /*==========  scheme  ==========*/
@@ -1654,6 +1683,7 @@ textarea
     width: fit-content
     padding: 0 55px
     margin: 30px auto 40px
+
 
 .messengers-box
   margin: 10px 0 0
