@@ -309,8 +309,8 @@ h2 {
       width: 100%;
       margin: 0 0 10px; }
     .home .form-callback .label-file {
-      -webkit-box-shadow: 0px 4px 20px rgba(7, 35, 92, 0.15);
-              box-shadow: 0px 4px 20px rgba(7, 35, 92, 0.15); }
+      -webkit-box-shadow: 0 4px 20px rgba(7, 35, 92, 0.15);
+              box-shadow: 0 4px 20px rgba(7, 35, 92, 0.15); }
 
 .home-slider-content {
   margin: 0 0 114px; }
@@ -2307,6 +2307,34 @@ a.color-black:hover {
 .home-type .home-slider__img {
   min-width: 948px;
   margin: -60px -277px 0 -210px; }
+
+.schedule-info {
+  text-align: center;
+  margin: 10px auto 20px; }
+  .schedule-info p {
+    margin: 0; }
+
+.holiday-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 19px; }
+
+#schedule-successModal .modal-dialog {
+  max-width: 480px; }
+
+#schedule-successModal .modal-content {
+  padding: 30px 30px 40px; }
+
+.btn-close-modal {
+  max-width: 170px;
+  margin: 0 auto; }
 
 /*==========  mark page end  ==========*/
 @font-face {

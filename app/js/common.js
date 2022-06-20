@@ -150,3 +150,5 @@ $(window).scroll(function () {
         $('header').removeClass('fixed');
     }
 });
+
+$('#schedule-successModal').modal('show');
