@@ -2336,6 +2336,64 @@ a.color-black:hover {
   max-width: 170px;
   margin: 0 auto; }
 
+.label-file-result {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px auto 40px;
+  max-width: 380px; }
+  .label-file-result__item {
+    margin: 0 4px 8px;
+    width: 59px;
+    height: 44px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: 1px solid #C4C4C4;
+      border-radius: 5px;
+    position: relative;
+    overflow: hidden; }
+    .label-file-result__item img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+
+.label-file-result__delete {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 4px;
+  right: 4px;
+  z-index: 1; }
+  .label-file-result__delete:before, .label-file-result__delete:after {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 1px;
+    height: 100%; }
+  .label-file-result__delete:before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .label-file-result__delete:after {
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg); }
+
 /*==========  mark page end  ==========*/
 @font-face {
   font-family: "Gilroy";
