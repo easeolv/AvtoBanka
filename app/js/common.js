@@ -152,3 +152,14 @@ $(window).scroll(function () {
 });
 
 $('#schedule-successModal').modal('show');
+
+// this is your selector
+$('input.inp-file').MultiFile({
+    // your options go here
+    // max: 2,
+    accept: 'gif|jpg|png',
+    list: '.label-file-result',
+    STRING: {
+        remove: ''
+    }
+});

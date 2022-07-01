@@ -2025,7 +2025,24 @@ a.color-black
       height: 100%
       object-fit: cover
 
-.label-file-result__delete
+div.MultiFile-label
+  margin: 0 4px 8px
+  width: 59px
+  height: 44px
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid #C4C4C4
+    radius: 5px
+  position: relative
+  overflow: hidden
+  .MultiFile-preview
+    width: 100% !important
+    height: 100% !important
+    object-fit: cover
+
+
+.label-file-result__delete, .MultiFile-remove
   position: absolute
   width: 10px
   height: 10px
@@ -2042,6 +2059,9 @@ a.color-black
     transform: rotate(45deg)
   &:after
     transform: rotate(135deg)
+
+.MultiFile-title
+  display: none
 
 /*==========  mark page end  ==========*/
 
