@@ -2389,10 +2389,7 @@ a.color-black:hover {
           justify-content: center;
   overflow: hidden; }
   .fileup-file.fileup-image .fileup-preview img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover; }
+    width: 100%; }
 
 .fileup-file.fileup-image .fileup-preview img {
   max-width: none;
