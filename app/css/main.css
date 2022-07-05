@@ -2446,6 +2446,70 @@ a.color-black:hover {
 .fileup-file .fileup-controls .fileup-upload, .fileup-file .fileup-controls .fileup-abort, .fileup-file .fileup-clear, .fileup-progress, .fileup-result, .fileup-description {
   display: none; }
 
+.form-success-file {
+  width: 100%; }
+  .form-success-file .box-text {
+    margin: 0 auto 20px;
+    text-align: center; }
+  .form-success-file .label-file {
+    max-width: 380px;
+    margin: 0 auto; }
+
+.form-success-v2 h3 {
+  text-align: left; }
+
+.form-success-v2 label {
+  margin: 0 0 10px;
+  max-width: 330px; }
+
+.form-success-v2 .box-text {
+  text-align: left;
+  margin: 0 0 15px; }
+
+.form-success-v2 .label-file {
+  margin: 0 0 15px;
+  max-width: 367px; }
+
+.form-success-v2 .radio-mail {
+  max-width: 330px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .form-success-v2 .radio-mail .radio-text__title {
+    width: 100%; }
+  .form-success-v2 .radio-mail .radio-text__content {
+    max-width: 220px;
+    width: 100%;
+    margin: 5px 0 0; }
+  .form-success-v2 .radio-mail .radio-text {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left; }
+
+.form-success-v2 button.btn {
+  margin: 20px auto 30px; }
+
+.form-success-v2 .label-file-result {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start; }
+
+.form-success__content {
+  padding: 0 15px 0 0;
+  border-right: 1px solid #DBDEE5; }
+
+.form-success__file {
+  padding: 0 0 0 15px; }
+
 /*==========  mark page end  ==========*/
 @font-face {
   font-family: "Gilroy";
@@ -2985,7 +3049,31 @@ a.list-contacts-item {
   .form-success .radio-mail {
     max-width: 65%; }
   .form-success button {
-    margin: 9px auto 40px; } }
+    margin: 9px auto 40px; }
+  .form-success-v2 h3 {
+    text-align: center; }
+  .form-success-v2 label {
+    margin: 0 auto 10px;
+    max-width: 367px; }
+  .form-success-v2 .radio-mail {
+    max-width: 367px; }
+  .form-success-v2 .box-text {
+    text-align: center;
+    max-width: 367px;
+    margin: 0 auto 10px; }
+  .form-success-v2 .label-file {
+    margin: 0 auto 10px; }
+  .form-success-v2 button.btn {
+    margin: 0 auto 30px; }
+  .form-success-v2 .label-file-result {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .form-success__content {
+    border: none;
+    padding: 0; }
+  .form-success__file {
+    padding: 0; } }
 
 @media only screen and (max-width: 768px) {
   h1, .slider-title {
@@ -3061,7 +3149,9 @@ a.list-contacts-item {
   .form-success label {
     max-width: 48%; }
   .form-success .radio-mail {
-    max-width: 98%; } }
+    max-width: 98%; }
+  .form-success-v2 .radio-mail, .form-success-v2 label {
+    max-width: 367px; } }
 
 @media only screen and (max-width: 576px) {
   .category-auto {
@@ -3195,7 +3285,16 @@ a.list-contacts-item {
       .form-success .radio-mail .radio-text__content {
         width: 100%;
         max-width: 100%;
-        margin: 5px 0 0; } }
+        margin: 5px 0 0; }
+  .form-success-file {
+    width: calc(100% + 30px);
+    margin: 0 -15px 30px;
+    padding: 15px 30px;
+    background: rgba(8, 77, 188, 0.1); }
+    .form-success-file .box-text {
+      font-weight: 700; }
+  .label-file-result {
+    margin: 10px auto; } }
 
 @media only screen and (max-width: 480px) {
   h1, .slider-title {
