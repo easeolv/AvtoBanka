@@ -2509,6 +2509,8 @@ a.color-black:hover {
 
 .form-success__file {
   padding: 0 0 0 15px; }
+  .form-success__file .box-text {
+    max-width: 360px; }
 
 /*==========  mark page end  ==========*/
 @font-face {
