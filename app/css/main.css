@@ -2352,7 +2352,7 @@ a.color-black:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 10px auto 40px;
+  margin: 10px auto 20px;
   max-width: 500px; }
 
 .fileup-file {
@@ -2414,8 +2414,8 @@ a.color-black:hover {
   top: 4px; }
 
 .label-file-result__delete, .fileup-file .fileup-controls .fileup-remove {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3286,15 +3286,18 @@ a.list-contacts-item {
         width: 100%;
         max-width: 100%;
         margin: 5px 0 0; }
-  .form-success-file {
+  .form-success-file, .form-success__file {
     width: calc(100% + 30px);
     margin: 0 -15px 30px;
-    padding: 15px 30px;
-    background: rgba(8, 77, 188, 0.1); }
-    .form-success-file .box-text {
+    padding: 40px 30px 30px;
+    background: #F4F6FA; }
+    .form-success-file .box-text, .form-success__file .box-text {
       font-weight: 700; }
   .label-file-result {
-    margin: 10px auto; } }
+    margin: 10px auto 0; }
+  .label-file-result__delete, .fileup-file .fileup-controls .fileup-remove {
+    width: 13px;
+    height: 13px; } }
 
 @media only screen and (max-width: 480px) {
   h1, .slider-title {
