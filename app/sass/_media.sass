@@ -374,7 +374,6 @@
 
   .form-success
     label
-      //min-height: 102px
       max-width: 48%
     .radio-mail
       max-width: 98%
@@ -383,6 +382,38 @@
     .radio-mail, label
       max-width: 367px
 
+  .success-page-icon
+    display: inline-flex
+    margin: 0 10px 0 0
+    max-width: 30px
+
+  .success-page-content
+    h1
+      display: flex
+      align-items: center
+      justify-content: center
+      span
+        margin: 0 0 0 5px
+      .success-page-icon
+        margin: 0 10px 0 0
+
+  .form-success
+    margin: 30px auto 0
+
+  .form-success-file, .form-success__file
+    width: calc(100% + 30px)
+    margin: 0 -15px 30px
+    padding: 40px 30px 30px
+    background: #F4F6FA
+    .box-text
+      font-weight: 700
+
+  .label-file-result
+    margin: 10px 0
+
+  .form-success .box-text
+    max-width: 367px
+    margin: 0 auto 10px
 
 @media only screen and (max-width: 576px)
   .category-auto
@@ -570,13 +601,7 @@
           max-width: 100%
           margin: 5px 0 0
 
-  .form-success-file, .form-success__file
-    width: calc(100% + 30px)
-    margin: 0 -15px 30px
-    padding: 40px 30px 30px
-    background: #F4F6FA
-    .box-text
-      font-weight: 700
+
 
   .label-file-result
     margin: 10px auto 0
@@ -584,6 +609,8 @@
   .label-file-result__delete, .fileup-file .fileup-controls .fileup-remove
     width: 13px
     height: 13px
+
+
 
 @media only screen and (max-width: 480px)
   h1, .slider-title
@@ -674,15 +701,11 @@
   .type-car-box11 .type-car-box__img
     max-width: 279px
 
-  .success-page-icon
-    display: inline-flex
-    margin: 0 10px 0 0
-    max-width: 30px
+  .form-success
+    margin: 20px auto 0
 
-  .success-page-content h1
-    display: flex
-    align-items: center
-    justify-content: center
+  .success-page-content
+    margin: 10px 0 0
 
   .fileup-file.fileup-image .fileup-preview
     width: 64px
