@@ -86,6 +86,14 @@ $(document).ready(function () {
     })
 });
 
+$('.checkbox-form input:checkbox').change(function(){
+    if($(this).is(":checked")) {
+        $('.checkbox-form').removeClass("nocheck");
+    } else {
+        $('.checkbox-form').addClass("nocheck");
+    }
+});
+
 
 //плавный скролл
 $(document).ready(function () {
@@ -168,24 +176,4 @@ $.fileup({
     method: 'post',
     timeout: null,
     autostart: false,
-    // templateFile: '<div id="file-[INPUT_ID]-[FILE_NUM]" class="fileup-file [TYPE]">' +
-    //     '<div class="preview">' +
-    //     '<img src="[PREVIEW_SRC]" alt="[NAME]"/>' +
-    //     '</div>' +
-    //     '<div class="data">' +
-    //     '<div class="description">' +
-    //     '<span class="file-name">[NAME]</span> (<span class="file-size">[SIZE_HUMAN]</span>)' +
-    //     '</div>' +
-    //     '<div class="controls">' +
-    //     '<span class="remove" onclick="$.fileup(\'[INPUT_ID]\', \'remove\', \'[FILE_NUM]\');" title="[REMOVE]">x</span>' +
-    //     '<span class="upload" onclick="$.fileup(\'[INPUT_ID]\', \'upload\', \'[FILE_NUM]\');">[UPLOAD]</span>' +
-    //     '<span class="abort" onclick="$.fileup(\'[INPUT_ID]\', \'abort\', \'[FILE_NUM]\');" style="display:none">[ABORT]</span>' +
-    //     '</div>' +
-    //     '<div class="result"></div>' +
-    //     '<div class="fileup-progress">' +
-    //     '<div class="fileup-progress-bar"></div>' +
-    //     '</div>' +
-    //     '</div>' +
-    //     '<div class="clear">x</div>' +
-    //     '</div>',
 });

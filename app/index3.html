@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>AutoBanka</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/intlTelInput.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="mobile-menu__head">
+    <h2>
+      <a href="index.html" class="logo">
+        <span class="logo-name"><img src="img/logo-mobile.svg" alt=""></span>
+        <span class="logo-text">выкуп авто</span>
+      </a>
+    </h2>
+    <div class="btn-close">
+      <svg class="svg-icon">
+        <use xlink:href="img/sprite.svg#close"></use>
+      </svg>
+    </div>
+  </div>
+  <div class="mobile-menu__body">
+    <ul class="menu">
+      <li><a href="#">Продать авто</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">Что выкупаем</a>
+        <div class="dropdown-menu">
+          <a href="mark.html" class="dropdown-item">По маркам автомобилей</a>
+          <a href="type-car.html" class="dropdown-item">По типу автомобилей</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">О нас</a>
+        <div class="dropdown-menu">
+          <a href="about.html" class="dropdown-item">О нас</a>
+          <a href="news.html" class="dropdown-item">Новости</a>
+        </div>
+      </li>
+      <li><a href="contacts.html">Контакты</a></li>
+    </ul>
+
+    <div class="list-language">
+      <a href="#" class="list-language-item">
+        <span class="list-language-item__icon"><img src="img/latvia.svg" alt=""></span>
+        <span class="list-language-item__text">lv</span>
+      </a>
+      <a href="#" class="list-language-item">
+        <span class="list-language-item__icon"><img src="img/russia.svg" alt=""></span>
+        <span class="list-language-item__text">RU</span>
+      </a>
+      <a href="#" class="list-language-item">
+        <span class="list-language-item__icon"><img src="img/usa.svg" alt=""></span>
+        <span class="list-language-item__text">en</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="overlay-menu"></div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+
+        <h2>
+          <a href="index.html" class="logo">
+            <span class="logo-name"><img src="img/logo.svg" alt=""></span>
+            <span class="logo-text">выкуп авто</span>
+          </a>
+        </h2>
+
+        <ul class="menu">
+          <li><a href="#">Продать авто</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">Что выкупаем</a>
+            <div class="dropdown-menu">
+              <a href="mark.html" class="dropdown-item">По маркам автомобилей</a>
+              <a href="type-car.html" class="dropdown-item">По типу автомобилей</a>
+            </div>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" type="button" data-toggle="dropdown">О нас</a>
+            <div class="dropdown-menu">
+              <a href="about.html" class="dropdown-item">О нас</a>
+              <a href="news.html" class="dropdown-item">Новости</a>
+            </div>
+          </li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+
+        <div class="dropdown dropdown-language">
+          <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="language-item">
+              <div class="language-item__flag"><img src="img/russia.svg" alt=""></div>
+              <div class="language-item__text">RU</div>
+            </div>
+          </div>
+          <div class="dropdown-menu">
+            <div class="dropdown-item">
+              <div class="language-item">
+                <div class="language-item__flag"><img src="img/usa.svg" alt=""></div>
+                <div class="language-item__text">USA</div>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <div class="language-item">
+                <div class="language-item__flag"><img src="img/russia.svg" alt=""></div>
+                <div class="language-item__text">RU</div>
+              </div>
+            </div>
+            <div class="dropdown-item">
+              <div class="language-item">
+                <div class="language-item__flag"><img src="img/latvia.svg" alt=""></div>
+                <div class="language-item__text">LV</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <ul class="list-messengers">
+          <li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+          <li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+        </ul>
+
+        <div class="header-box">
+          <a href="tel:+37129838705" class="phone">+371 29-838-705</a>
+          <a href="#" class="links-accent" data-toggle="modal" data-target="#callModal">Заказать обратный звонок</a>
+        </div>
+
+        <a href="tel:" class="phone-mobile">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#phone"></use>
+          </svg>
+        </a>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="home">
+  <div class="home-slider-item">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <div class="home-slider-content">
+            <h1 class="slider-title">Выкупим ваше авто <br>
+              по <span class="color-accent">максимальной</span> цене
+            </h1>
+
+            <form method="post" class="form form-callback">
+              <label>
+            <span class="input-country">
+              <span class="input-country__icon"><img src="img/es.png" alt=""></span>
+              <span class="input-country__text">lv</span>
+            </span>
+                <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
+              </label>
+
+              <label>
+                <input type="tel" class="phone-input phone-input1" placeholder="Телефон">
+              </label>
+
+              <label class="label-price">
+                <span class="label-price__icon"><img src="img/currency.svg" alt=""></span>
+                <input type="text" placeholder="Желаемая цена" name="price">
+              </label>
+
+              <!--              <label class="label-file">-->
+              <!--                <input type="file" class="inp-file">-->
+              <!--                <span class="label-file__icon"><img src="img/camera.svg" alt=""></span>-->
+              <!--                <span class="label-file__text">Прикрепить фото</span>-->
+              <!--              </label>-->
+
+
+              <label class="checkbox-form checkbox">
+                <input type="checkbox" class="inp-checkbox" checked name="checkbox">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-text">
+                  Я соглашаюсь с <a href="#" target="_blank" data-toggle="modal" data-target="#modalPolitic">политикой обработки персональных данных</a>
+                </span>
+              </label>
+
+
+              <button type="submit" class="btn btn-red">Оценить стоимость авто</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="home-slider__img"><img src="img/car1.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  <div class="home-slider">-->
+  <!--    <div class="slide">-->
+  <!--      -->
+  <!--    </div>-->
+  <!--    <div class="slide">-->
+  <!--      <div class="home-slider-item">-->
+  <!--        <div class="container">-->
+  <!--          <div class="row">-->
+  <!--            <div class="col-12 col-md-8">-->
+  <!--              <div class="home-slider-content">-->
+  <!--                <h1 class="slider-title">Выкупим ваше авто <br>-->
+  <!--                  по <span class="color-accent">максимальной</span> цене-->
+  <!--                </h1>-->
+
+  <!--                <div class="list-cities">-->
+  <!--                  <div class="list-cities-item">-->
+  <!--                    <div class="list-cities-item__icon">-->
+  <!--                      <svg class="svg-icon">-->
+  <!--                        <use xlink:href="img/sprite.svg#location"></use>-->
+  <!--                      </svg>-->
+  <!--                    </div>-->
+  <!--                    <div class="list-cities-item__text">РИГа</div>-->
+  <!--                  </div>-->
+  <!--                  <div class="list-cities-item">-->
+  <!--                    <div class="list-cities-item__icon">-->
+  <!--                      <svg class="svg-icon">-->
+  <!--                        <use xlink:href="img/sprite.svg#location"></use>-->
+  <!--                      </svg>-->
+  <!--                    </div>-->
+  <!--                    <div class="list-cities-item__text">талси</div>-->
+  <!--                  </div>-->
+  <!--                  <div class="list-cities-item">-->
+  <!--                    <div class="list-cities-item__icon">-->
+  <!--                      <svg class="svg-icon">-->
+  <!--                        <use xlink:href="img/sprite.svg#location"></use>-->
+  <!--                      </svg>-->
+  <!--                    </div>-->
+  <!--                    <div class="list-cities-item__text">Валмиера</div>-->
+  <!--                  </div>-->
+  <!--                </div>-->
+  <!--                <form method="post" class="form form-callback">-->
+  <!--                  <label>-->
+  <!--            <span class="input-country">-->
+  <!--              <span class="input-country__icon"><img src="img/es.png" alt=""></span>-->
+  <!--              <span class="input-country__text">lv</span>-->
+  <!--            </span>-->
+  <!--                    <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">-->
+  <!--                  </label>-->
+
+  <!--                  <label>-->
+  <!--                    <input type="tel" class="phone-input phone-input1" placeholder="Телефон">-->
+  <!--                  </label>-->
+
+  <!--                  <button type="submit" class="btn btn-red">Оценить стоимость авто</button>-->
+  <!--                </form>-->
+  <!--              </div>-->
+  <!--            </div>-->
+  <!--            <div class="col-12 col-md-4">-->
+  <!--              <div class="home-slider__img"><img src="img/car1.png" alt=""></div>-->
+  <!--            </div>-->
+  <!--          </div>-->
+  <!--        </div>-->
+  <!--      </div>-->
+  <!--    </div>-->
+  <!--  </div>-->
+</main>
+
+<section class="scheme p-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2><span class="color-accent">Схема</span> выкупа автомобилей</h2>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="scheme-wrapper">
+          <div class="scheme-row">
+            <div class="number-stages">1</div>
+            <div class="scheme-box">
+              <h3>Заявка для оценки авто</h3>
+              <div class="box-text"><p>Оставьте заявку на сайте, приложите фотографии авто и дождитесь звонка нашего
+                авто-эксперта.</p></div>
+            </div>
+          </div>
+          <div class="scheme-row">
+            <div class="number-stages">2</div>
+            <div class="scheme-box">
+              <h3>Звонок авто-эксперта</h3>
+              <div class="box-text"><p>Наш эксперт предварительно оценит автомобиль по Вашей заявке и свяжется с
+                Вами.</p></div>
+            </div>
+          </div>
+          <div class="scheme-row">
+            <div class="number-stages">3</div>
+            <div class="scheme-box">
+              <h3>Осмотр автомобиля</h3>
+              <div class="box-text"><p>Эксперт договорится с Вами о встрече для полноценного осмотра автомобиля.</p>
+              </div>
+            </div>
+          </div>
+          <div class="scheme-row">
+            <div class="number-stages">4</div>
+            <div class="scheme-box">
+              <h3>Заключение договора</h3>
+              <div class="box-text"><p>В течении часа авто-эксперт подготовит двусторонний договор купли-продажи для
+                подписания.</p></div>
+            </div>
+          </div>
+          <div class="scheme-row">
+            <div class="number-stages">5</div>
+            <div class="scheme-box">
+              <h3>Получение денежных средств</h3>
+              <div class="box-text"><p>Получите полную сумму за автомобиль на ваш банковский счёт после подписания
+                договор</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="category-auto p-80 bg-blue-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Какие авто мы <span class="color-accent">выкупаем?</span></h2>
+      </div>
+    </div>
+
+    <div class="row category-auto-slider">
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
+        <div class="category-auto-box category-auto-box1">
+          <h4>Легковые</h4>
+          <img src="img/category1.png" alt="" class="category-auto-box__img">
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
+        <div class="category-auto-box category-auto-box2">
+          <h4>Коммерческие</h4>
+          <img src="img/category2.png" alt="" class="category-auto-box__img">
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
+        <div class="category-auto-box category-auto-box3">
+          <h4>Битые авто</h4>
+          <img src="img/category3.png" alt="" class="category-auto-box__img">
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
+        <div class="category-auto-box category-auto-box4">
+          <h4>Кредитные</h4>
+          <img src="img/category4.png" alt="" class="category-auto-box__img">
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
+        <div class="category-auto-box category-auto-box5">
+          <h4>Проблемные авто
+            (арест)</h4>
+          <img src="img/category5.png" alt="" class="category-auto-box__img">
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-20">
+        <div class="category-auto-box category-auto-box6">
+          <h4>Дорогие авто <br>
+            (люкс)</h4>
+          <img src="img/category6.png" alt="" class="category-auto-box__img">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callback">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center"><h2>Узнайте цену вашего авто</h2></div>
+      <div class="col-12">
+        <form method="post" class="form form-callback">
+          <label>
+            <span class="input-country">
+              <span class="input-country__icon"><img src="img/es.png" alt=""></span>
+              <span class="input-country__text">lv</span>
+            </span>
+            <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
+          </label>
+
+          <label>
+            <input type="tel" class="phone-input phone-input3" placeholder="Телефон">
+          </label>
+
+          <button type="submit" class="btn btn-red">Оценить стоимость авто</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="why-company">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-8">
+        <div class="why-company-content">
+          <h2>Почему именно <span class="color-accent">autobanka?</span></h2>
+          <div class="box-text">
+            <p>Компания AutoBanka специализируется на выкупе автомобилей по всей Латвии. Наша команда работает быстро и
+              методично. Выкупаем новые, подержанные и битые автомобили в Риге, Талси, Валмиере, выезд оценщика
+              осуществляется бесплатно для наших клиентов. Оценка авто проводится в течение нескольких минут после
+              заявки или звонка. Возможна оценка по фото и видео. Обещаем прозрачность, удобство и надежность сделки.
+              Делаем процесс продажи вашего автомобиля быстрым, легким и безопасным.</p>
+
+            <p>Никаких торгов в последнюю минуту - НИКОГДА!</p>
+          </div>
+
+          <div class="why-company-numbers">
+            <div class="why-company-box">
+              <h4>30 минут</h4>
+              <p>на получение предложения</p>
+            </div>
+            <div class="why-company-box">
+              <h4>12 часов</h4>
+              <p>среднее время сделки</p>
+            </div>
+            <div class="why-company-box">
+              <h4>95%</h4>
+              <p>довольных клиентов</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4">
+        <div class="why-company-img"><img src="img/why-img.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="information bg-blue-light p-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <div class="information-content">
+          <h2>Что <span class="color-accent">нужно</span> знать?</h2>
+          <div class="box-text">
+            <p>Каждый автовладелец, при продаже машины, хочет сделать это быстро и дорого. Зачастую, сделать это сложно.
+              Для проведения максимально комфортной и выгодной сделки обратитесь в компанию «Вебер-Авто».</p>
+          </div>
+          <div class="information-img d-none d-lg-flex"><img src="img/info-img.png" alt=""></div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <div class="information-box">
+          <h3>Как формируется конечная цена автомобиля?</h3>
+          <div class="box-text">
+            <p>Характеристики, которые увеличивают стоимость авто <br>на 15-20%:</p>
+            <ul class="list-check">
+              <li>Распространенность марки и высокий спрос на нее в Литве;</li>
+              <li>Год выпуска автомобиля;</li>
+              <li>Исправность основных агрегатов, низкий пробег и т.д.</li>
+              <li>Особенно важными являются состояние мотора и кузова.</li>
+            </ul>
+            <p>Машина, кузов которой не подлежит восстановлению, может быть выкуплена на разборку. В этом случае цена на
+              нее будет снижена. Мы осуществляем выкуп авто в любом состоянии с учетом экономических интересов
+              продавца.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 d-block d-lg-none">
+        <div class="information-img"><img src="img/info-img.png" alt=""></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="documents p-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Необходимые <span class="color-accent">документы</span></h2>
+      </div>
+
+      <div class="box-text mb-30">
+        <p>Помимо наличия машины, на нее необходимо представить следующие документы:</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4 mb-30">
+        <div class="documents-box">
+          <div class="documents-box__icon"><img src="img/checked.svg" alt=""></div>
+          <p>Паспорт ТС</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-30">
+        <div class="documents-box">
+          <div class="documents-box__icon"><img src="img/checked.svg" alt=""></div>
+          <p>Паспорт или ID карта владельца ТС</p>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-30">
+        <div class="documents-box">
+          <div class="documents-box__icon"><img src="img/checked.svg" alt=""></div>
+          <p>Номер банковского счёта владельца ТС</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-10 offset-lg-1">
+        <div class="box-text">
+          <p>Если не Вы являетесь владельцем авто, то необходимо представить генеральную доверенность. Плюсом будет
+            наличие диагностической карты и сведения о нюансах сервисного обслуживания авто.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="work-address">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-4">
+        <div class="work-address-content">
+          <h2><span class="color-accent">Где</span> мы работаем?</h2>
+          <!-- Общий контейнер для табов -->
+          <div class="tabs">
+
+            <!--  Контейнер с вкладками   -->
+            <ul class="tab-header">
+              <li class="tab-header__item js-tab-trigger active" data-tab="1">Рига</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="2">Талси</li>
+              <li class="tab-header__item js-tab-trigger" data-tab="3">Валмиер</li>
+            </ul>
+
+            <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+            <ul class="tab-content">
+              <li class="tab-content__item js-tab-content active" data-tab="1">
+                <div class="work-address-box">
+                  <h3>Название магазина</h3>
+                  <div class="list-contacts">
+                    <div class="list-contacts-item">
+                      <div class="list-contacts-item__icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#location"></use>
+                        </svg>
+                      </div>
+                      <div class="list-contacts-item__text">Riga - Maskavas iela 418, LV-1063</div>
+                    </div>
+                    <a href="tel:+37129838705" class="list-contacts-item">
+            <span class="list-contacts-item__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </span>
+                      <span class="list-contacts-item__text">+371 29-838-705</span>
+                    </a>
+                    <a href="mailto:info@autobanka.lv" class="list-contacts-item">
+            <span class="list-contacts-item__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+            </span>
+                      <span class="list-contacts-item__text">info@autobanka.lv</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="tab-content__item js-tab-content" data-tab="2">
+                <div class="work-address-box">
+                  <h3>Название магазина</h3>
+                  <div class="list-contacts">
+                    <div class="list-contacts-item">
+                      <div class="list-contacts-item__icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#location"></use>
+                        </svg>
+                      </div>
+                      <div class="list-contacts-item__text">Riga - Maskavas iela 418, LV-1063</div>
+                    </div>
+                    <a href="tel:+37129838705" class="list-contacts-item">
+            <span class="list-contacts-item__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </span>
+                      <span class="list-contacts-item__text">+371 29-838-705</span>
+                    </a>
+                    <a href="mailto:info@autobanka.lv" class="list-contacts-item">
+            <span class="list-contacts-item__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+            </span>
+                      <span class="list-contacts-item__text">info@autobanka.lv</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="tab-content__item js-tab-content" data-tab="3">
+                <div class="work-address-box">
+                  <h3>Название магазина</h3>
+                  <div class="list-contacts">
+                    <div class="list-contacts-item">
+                      <div class="list-contacts-item__icon">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#location"></use>
+                        </svg>
+                      </div>
+                      <div class="list-contacts-item__text">Riga - Maskavas iela 418, LV-1063</div>
+                    </div>
+                    <a href="tel:+37129838705" class="list-contacts-item">
+            <span class="list-contacts-item__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </span>
+                      <span class="list-contacts-item__text">+371 29-838-705</span>
+                    </a>
+                    <a href="mailto:info@autobanka.lv" class="list-contacts-item">
+            <span class="list-contacts-item__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+            </span>
+                      <span class="list-contacts-item__text">info@autobanka.lv</span>
+                    </a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-8">
+        <!--  Контейнер с блоками, которые содержат контент вкладок   -->
+        <ul class="tab-content">
+          <li class="tab-content__item js-tab-content active" data-tab="1">
+            <div class="map">
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.0674229301007!2d24.208456416014542!3d56.89623178087463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed24236c232f3%3A0xed297e4a9b831e4f!2zTWFza2F2YXMgaWVsYSA0MTgsIExhdGdhbGVzIHByaWVrxaFwaWxzxJN0YSwgUsSrZ2EsIExWLTEwNjMsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1658496160242!5m2!1sru!2sua"
+                  style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </li>
+          <li class="tab-content__item js-tab-content" data-tab="2">
+            <div class="map">
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.0674229301007!2d24.208456416014542!3d56.89623178087463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed24236c232f3%3A0xed297e4a9b831e4f!2zTWFza2F2YXMgaWVsYSA0MTgsIExhdGdhbGVzIHByaWVrxaFwaWxzxJN0YSwgUsSrZ2EsIExWLTEwNjMsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1658496160242!5m2!1sru!2sua"
+                  style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </li>
+          <li class="tab-content__item js-tab-content" data-tab="3">
+            <div class="map">
+              <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.0674229301007!2d24.208456416014542!3d56.89623178087463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed24236c232f3%3A0xed297e4a9b831e4f!2zTWFza2F2YXMgaWVsYSA0MTgsIExhdGdhbGVzIHByaWVrxaFwaWxzxJN0YSwgUsSrZ2EsIExWLTEwNjMsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1658496160242!5m2!1sru!2sua"
+                  style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callback">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center"><h2>Выкупим ваш автомобиль</h2></div>
+      <div class="col-12">
+        <form method="post" class="form form-callback">
+          <label>
+            <span class="input-country">
+              <span class="input-country__icon"><img src="img/es.png" alt=""></span>
+              <span class="input-country__text">lv</span>
+            </span>
+            <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
+          </label>
+
+          <label>
+            <input type="tel" class="phone-input phone-input4" placeholder="Телефон">
+          </label>
+
+          <button type="submit" class="btn btn-red">Оценить стоимость авто</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="lucrative-ransom p-100 bg-blue-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2><span class="color-accent">Выгодный</span> выкуп авто</h2>
+      </div>
+    </div>
+
+    <div class="row lucrative-ransom-slider">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="lucrative-ransom-box">
+          <div class="lucrative-ransom-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+          <div class="box-text">
+            <p>Обеспечиваем полную юридическаяую и финансовую безопасность, а также прозрачность сделки</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="lucrative-ransom-box">
+          <div class="lucrative-ransom-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+          <div class="box-text">
+            <p>Объективно оцениваем, анализируем преимущества и рассчитываем наиболее близкую к реальной стоимость
+              авто</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="lucrative-ransom-box">
+          <div class="lucrative-ransom-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+          <div class="box-text">
+            <p>Выкуп авто в течении рабочего дня. Оцениваем, осматриваем, оформляем сделку и перечисляем деньги за авто
+              в течение 24 часов</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="lucrative-ransom-box">
+          <div class="lucrative-ransom-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+          <div class="box-text">
+            <p>Три наиболее выгодные для клиентов программы продажи авто: быстрый выкуп, комиссия и Trade-in</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sell-a-car p-100" id="sell-a-car">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-lg-6">
+        <h2><span class="color-accent">как продать</span> автомобиль</h2>
+        <div class="box-text">
+          <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+            таких как его текущее состояние, способность заводиться или двигаться.</p>
+          <p>Вот некоторые вещи, о которых следует помнить: правильно ли работает электрика? В каком состоянии
+            двигатель?
+            Какой пробег автомобиля? Участвовало ли транспортное средство в ДТП? Это может помочь определить
+            справедливую
+            рыночную стоимость вашего авто.</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="sell-a-car-video">
+          <img src="img/video-img.png" class="sell-a-car-video__img" alt="">
+          <a href="#" class="btn-play">
+            <span class="btn-play__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#play"></use></svg></span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="reviews p-100 bg-blue-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h2><span class="color-accent">отзывы</span> о нашей работе</h2>
+        <div class="reviews-img d-none d-md-flex"><img src="img/reviews-img.png" alt=""></div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="reviews-slider">
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__head">
+                <div class="avatar">И</div>
+                <div class="name-user">
+                  <h4>Иван Иванович</h4>
+                  <div class="date">17.02.2020</div>
+                </div>
+              </div>
+              <div class="reviews-box__body">
+                <div class="box-text">
+                  <p>Продал свой автомобиль в компанию AutoBanka. Продал — дорого. Во всяком случае, по сравнению с
+                    остальными компаниями по выкупу автомобилей из интернета, которые объезжал и обзванивал. Посещал
+                    порядка трех, а обзвонил с десяток до этой фирмы — давали меньше. Сделка прошла быстро и без лишних
+                    заморочек, обговорили время, встретились, осмотрели машину и перевели деньги на карту. Отдельное
+                    спасибо менеджеру имя забыл к сожалению, но в любом случае спасибо большое дружище!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__head">
+                <div class="avatar">И</div>
+                <div class="name-user">
+                  <h4>Иван Иванович</h4>
+                  <div class="date">17.02.2020</div>
+                </div>
+              </div>
+              <div class="reviews-box__body">
+                <div class="box-text">
+                  <p>Продал свой автомобиль в компанию AutoBanka. Продал — дорого. Во всяком случае, по сравнению с
+                    остальными компаниями по выкупу автомобилей из интернета, которые объезжал и обзванивал. Посещал
+                    порядка трех, а обзвонил с десяток до этой фирмы — давали меньше. Сделка прошла быстро и без лишних
+                    заморочек, обговорили время, встретились, осмотрели машину и перевели деньги на карту. Отдельное
+                    спасибо менеджеру имя забыл к сожалению, но в любом случае спасибо большое дружище!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="reviews-box">
+              <div class="reviews-box__head">
+                <div class="avatar">И</div>
+                <div class="name-user">
+                  <h4>Иван Иванович</h4>
+                  <div class="date">17.02.2020</div>
+                </div>
+              </div>
+              <div class="reviews-box__body">
+                <div class="box-text">
+                  <p>Продал свой автомобиль в компанию AutoBanka. Продал — дорого. Во всяком случае, по сравнению с
+                    остальными компаниями по выкупу автомобилей из интернета, которые объезжал и обзванивал. Посещал
+                    порядка трех, а обзвонил с десяток до этой фирмы — давали меньше. Сделка прошла быстро и без лишних
+                    заморочек, обговорили время, встретились, осмотрели машину и перевели деньги на карту. Отдельное
+                    спасибо менеджеру имя забыл к сожалению, но в любом случае спасибо большое дружище!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="question p-100">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2>Часто задаваемые <span class="color-accent">вопросы</span></h2>
+      </div>
+
+      <div class="col-12 col-lg-8 offset-lg-2">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                 aria-expanded="true" aria-controls="collapseOne">
+              <h3>Как продать автомобиль максимально дорого?</h3>
+              <div class="accordion-icon"></div>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                    факторов, таких как его текущее состояние, способность заводиться или двигаться. Вот некоторые вещи,
+                    о которых следует помнить: правильно ли работает электрика? В каком состоянии двигатель? Какой
+                    пробег автомобиля? Участвовало ли транспортное средство в ДТП? Это может помочь определить
+                    справедливую рыночную стоимость вашего авто.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingTwo" data-toggle="collapse"
+                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h3>Как продать автомобиль максимально дорого?</h3>
+              <div class="accordion-icon"></div>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                    факторов, таких как его текущее состояние, способность заводиться или двигаться. Вот некоторые вещи,
+                    о которых следует помнить: правильно ли работает электрика? В каком состоянии двигатель? Какой
+                    пробег автомобиля? Участвовало ли транспортное средство в ДТП? Это может помочь определить
+                    справедливую рыночную стоимость вашего авто.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingThree" data-toggle="collapse"
+                 data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <h3>Как продать автомобиль максимально дорого?</h3>
+              <div class="accordion-icon"></div>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                    факторов, таких как его текущее состояние, способность заводиться или двигаться. Вот некоторые вещи,
+                    о которых следует помнить: правильно ли работает электрика? В каком состоянии двигатель? Какой
+                    пробег автомобиля? Участвовало ли транспортное средство в ДТП? Это может помочь определить
+                    справедливую рыночную стоимость вашего авто.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingFour" data-toggle="collapse"
+                 data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <h3>Как продать автомобиль максимально дорого?</h3>
+              <div class="accordion-icon"></div>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                    факторов, таких как его текущее состояние, способность заводиться или двигаться. Вот некоторые вещи,
+                    о которых следует помнить: правильно ли работает электрика? В каком состоянии двигатель? Какой
+                    пробег автомобиля? Участвовало ли транспортное средство в ДТП? Это может помочь определить
+                    справедливую рыночную стоимость вашего авто.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingFive" data-toggle="collapse"
+                 data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              <h3>Как продать автомобиль максимально дорого?</h3>
+              <div class="accordion-icon"></div>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                    факторов, таких как его текущее состояние, способность заводиться или двигаться. Вот некоторые вещи,
+                    о которых следует помнить: правильно ли работает электрика? В каком состоянии двигатель? Какой
+                    пробег автомобиля? Участвовало ли транспортное средство в ДТП? Это может помочь определить
+                    справедливую рыночную стоимость вашего авто.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingSex" data-toggle="collapse"
+                 data-target="#collapseSex" aria-expanded="false" aria-controls="collapseSex">
+              <h3>Как продать автомобиль максимально дорого?</h3>
+              <div class="accordion-icon"></div>
+            </div>
+            <div id="collapseSex" class="collapse" aria-labelledby="headingSex" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                    факторов, таких как его текущее состояние, способность заводиться или двигаться. Вот некоторые вещи,
+                    о которых следует помнить: правильно ли работает электрика? В каком состоянии двигатель? Какой
+                    пробег автомобиля? Участвовало ли транспортное средство в ДТП? Это может помочь определить
+                    справедливую рыночную стоимость вашего авто.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header collapsed" id="headingSeven" data-toggle="collapse"
+                 data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              <h3>Как продать автомобиль максимально дорого?</h3>
+              <div class="accordion-icon"></div>
+            </div>
+            <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="box-text">
+                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                    факторов, таких как его текущее состояние, способность заводиться или двигаться. Вот некоторые вещи,
+                    о которых следует помнить: правильно ли работает электрика? В каком состоянии двигатель? Какой
+                    пробег автомобиля? Участвовало ли транспортное средство в ДТП? Это может помочь определить
+                    справедливую рыночную стоимость вашего авто.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="callback">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center"><h2>Хотите продать автомобиль?</h2></div>
+      <div class="col-12">
+        <form method="post" class="form form-callback">
+          <label>
+            <span class="input-country">
+              <span class="input-country__icon"><img src="img/es.png" alt=""></span>
+              <span class="input-country__text">lv</span>
+            </span>
+            <input type="text" placeholder="Номер автомобиля" name="number_auto" class="block-animate">
+          </label>
+
+          <label>
+            <input type="tel" class="phone-input phone-input5" placeholder="Телефон">
+          </label>
+
+          <button type="submit" class="btn btn-red">Оценить стоимость авто</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="footer-box">
+            <!--            <a href="index.html" class="logo">-->
+            <!--              <span class="logo-name"><img src="img/logo.svg" alt=""></span>-->
+            <!--              <h2 class="logo-text">выкуп авто</h2>-->
+            <!--            </a>-->
+
+            <h2>
+              <a href="index.html" class="logo">
+                <span class="logo-name"><img src="img/logo.svg" alt=""></span>
+                <span class="logo-text">выкуп авто</span>
+              </a>
+            </h2>
+
+            <div class="description-company">Компания «AutoBanka» работает на рынке автоуслуг Литвы с 2002 года!
+              Выкупаем автомобиль на выгодных условиях.
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <ul class="footer-menu">
+            <li><a href="about.html">О нас</a></li>
+            <li><a href="#sell-a-car" class="go_to">Продать машину</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="list-contacts">
+            <div class="list-contacts-item">
+              <div class="list-contacts-item__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#location"></use>
+                </svg>
+              </div>
+              <div class="list-contacts-item__text">Riga - Maskavas iela 418, LV-1063</div>
+            </div>
+            <a href="tel:+37129838705" class="list-contacts-item">
+            <span class="list-contacts-item__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#phone"></use>
+              </svg>
+            </span>
+              <span class="list-contacts-item__text">+371 29-838-705</span>
+            </a>
+            <a href="mailto:info@autobanka.lv" class="list-contacts-item">
+            <span class="list-contacts-item__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#mail"></use>
+              </svg>
+            </span>
+              <span class="list-contacts-item__text">info@autobanka.lv</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-4 order-lg-1">
+          <div class="footer-top-item">
+            <ul class="list-messengers">
+              <li><a href="#"><img src="img/viber.svg" alt=""></a></li>
+              <li><a href="#"><img src="img/telegram.svg" alt=""></a></li>
+              <li><a href="#"><img src="img/whatsapp.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-8">
+          <div class="footer-top-item">
+            <div class="social-box">
+              <p>Мы в соцсетях:</p>
+              <ul class="list-social">
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#instagram"></use>
+                  </svg>
+                </a></li>
+                <li><a href="#">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#fb"></use>
+                  </svg>
+                </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center footer-bottom-wrapper">
+          <div class="document">SIA ZEVA AUTO Reg. nr. 40103942814</div>
+          <div class="copyright">© 2021 Все права защищены</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="cookie">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-8 col-lg-9">
+        <div class="box-text">
+          <p>Этот сайт использует файлы cookie для хранения данных. Продолжая использовать сайт, вы даете свое согласие
+            на работу с этими файлами</p>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4 col-lg-3">
+        <a href="#" class="btn btn-red btn-close-cookie">Принять</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Заказать
+          обратный <span class="color-accent">звонок</span></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" class="form form-callback">
+          <label>
+            <input type="text" name="name" placeholder="Имя">
+          </label>
+
+          <label>
+            <input type="tel" class="phone-input phone-input6" placeholder="Телефон">
+          </label>
+
+          <button type="submit" class="btn btn-red">Перезвоните мне</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="thanksModal" tabindex="-1" aria-labelledby="thanksModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="check-icon"><img src="img/checked.svg" alt=""></div>
+
+        <h2 class="modal-title">заявка <span class="color-accent">отправлена</span></h2>
+        <div class="box-text">
+          <p>В ближайшее время с вами свяжется наш менеджер</p>
+        </div>
+        <button type="button" class="btn btn-red" data-dismiss="modal">ОК</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalPolitic" tabindex="-1" aria-labelledby="modalPoliticLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title">Политика <span class="color-accent">конфиденциальности</span></h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="box-text">
+          <ol class="list-politics">
+            <li><strong>1. Общие положения</strong>
+              <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального
+                закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет
+                порядок обработки персональных данных и меры по обеспечению безопасности персональных данных,
+                предпринимаемые Компания «AutoBanka» (далее – Оператор).</p>
+
+              <ol>
+                <li>
+                  <p>1.1. Оператор ставит своей важнейшей целью и условием осуществления своей деятельности соблюдение
+                    прав и
+                    свобод человека и гражданина при обработке его персональных данных, в том числе защиты прав на
+                    неприкосновенность частной жизни, личную и семейную тайну.</p>
+                </li>
+                <li>
+                  <p>1.2. Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика)
+                    применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта
+                    <a href="http://www.autobanka.lv">http://www.autobanka.lv</a>.</p>
+                </li>
+              </ol>
+            </li>
+            <li>
+              <strong>2. Основные понятия, используемые в Политике</strong>
+              <p>Настоящая политика обработки персональных данных составлена в соответствии с требованиями Федерального
+                закона от 27.07.2006. №152-ФЗ «О персональных данных» (далее - Закон о персональных данных) и определяет
+                порядок обработки персональных данных и меры по обеспечению безопасности персональных данных,
+                предпринимаемые Компания «AutoBanka» (далее – Оператор).</p>
+
+              <ol>
+                <li>
+                  <p>2.1. Автоматизированная обработка персональных данных – обработка персональных данных с помощью
+                    средств
+                    вычислительной техники.</p>
+                </li>
+                <li>
+                  <p>2.2. Блокирование персональных данных – временное прекращение обработки персональных данных (за
+                    исключением случаев, если обработка необходима для уточнения персональных данных).</p>
+                </li>
+                <li>
+                  <p>2.3. Веб-сайт – совокупность графических и информационных материалов, а также программ для ЭВМ и
+                    баз
+                    данных, обеспечивающих их доступность в сети интернет по сетевому адресу <a
+                        href="http://www.autobanka.lv">http://www.autobanka.lv</a>.</p>
+                </li>
+                <li>
+                  <p>2.4. Информационная система персональных данных — совокупность содержащихся в базах данных
+                    персональных
+                    данных, и обеспечивающих их обработку информационных технологий и технических средств.</p>
+                </li>
+                <li>
+                  <p>2.5. Обезличивание персональных данных — действия, в результате которых невозможно определить без
+                    использования дополнительной информации принадлежность персональных данных конкретному Пользователю
+                    или
+                    иному субъекту персональных данных.</p>
+                </li>
+                <li>
+                  <p>2.6. Обработка персональных данных – любое действие (операция) или совокупность действий
+                    (операций),
+                    совершаемых с использованием средств автоматизации или без использования таких средств с
+                    персональными
+                    данными, включая сбор, запись, систематизацию, накопление, хранение, уточнение (обновление,
+                    изменение),
+                    извлечение, использование, передачу (распространение, предоставление, доступ), обезличивание,
+                    блокирование, удаление, уничтожение персональных данных.</p>
+                </li>
+                <li>
+                  <p>2.7. Оператор – государственный орган, муниципальный орган, юридическое или физическое лицо,
+                    самостоятельно или совместно с другими лицами организующие и (или) осуществляющие обработку
+                    персональных
+                    данных, а также определяющие цели обработки персональных данных, состав персональных данных,
+                    подлежащих
+                    обработке, действия (операции), совершаемые с персональными данными.</p>
+                </li>
+                <li>
+                  <p>2.8. Персональные данные – любая информация, относящаяся прямо или косвенно к определенному или
+                    определяемому Пользователю веб-сайта <a href="http://www.autobanka.lv">http://www.autobanka.lv</a>.
+                  </p>
+                </li>
+                <li>
+                  <p>2.9. Персональные данные, разрешенные субъектом персональных данных для распространения, -
+                    персональные
+                    данные, доступ неограниченного круга лиц к которым предоставлен субъектом персональных данных путем
+                    дачи
+                    согласия на обработку персональных данных, разрешенных субъектом персональных данных для
+                    распространения
+                    в порядке, предусмотренном Законом о персональных данных (далее - персональные данные, разрешенные
+                    для
+                    распространения).</p>
+                </li>
+                <li><p>2.10. Пользователь – любой посетитель веб-сайта <a href="http://www.autobanka.lv">http://www.autobanka.lv</a>.
+                </p></li>
+                <li><p>2.11. Предоставление персональных данных – действия, направленные на раскрытие персональных
+                  данных
+                  определенному лицу или определенному кругу лиц.</p></li>
+                <li><p>2.12. Распространение персональных данных – любые действия, направленные на раскрытие
+                  персональных
+                  данных неопределенному кругу лиц (передача персональных данных) или на ознакомление с персональными
+                  данными неограниченного круга лиц, в том числе обнародование персональных данных в средствах массовой
+                  информации, размещение в информационно-телекоммуникационных сетях или предоставление доступа к
+                  персональным данным каким-либо иным способом.</p></li>
+                <li><p>2.13. Трансграничная передача персональных данных – передача персональных данных на территорию
+                  иностранного государства органу власти иностранного государства, иностранному физическому или
+                  иностранному юридическому лицу.</p></li>
+                <li><p>2.14. Уничтожение персональных данных – любые действия, в результате которых персональные данные
+                  уничтожаются безвозвратно с невозможностью дальнейшего восстановления содержания персональных данных в
+                  информационной системе персональных данных и (или) уничтожаются материальные носители персональных
+                  данных.</p></li>
+              </ol>
+            </li>
+            <li>
+              <strong>3. Основные права и обязанности Оператора</strong>
+              <ol>
+                <li>
+                  <p>3.1. Оператор имеет право:</p>
+
+                  <ul>
+                    <li>получать от субъекта персональных данных достоверные информацию и/или документы, содержащие
+                      персональные
+                      данные;
+                    </li>
+                    <li>в случае отзыва субъектом персональных данных согласия на обработку персональных данных Оператор
+                      вправе
+                      продолжить обработку персональных данных без согласия субъекта персональных данных при наличии
+                      оснований, указанных в Законе о персональных данных;
+                    </li>
+                    <li>самостоятельно определять состав и перечень мер, необходимых и достаточных для обеспечения
+                      выполнения
+                      обязанностей, предусмотренных Законом о персональных данных и принятыми в соответствии с ним
+                      нормативными правовыми актами, если иное не предусмотрено Законом о персональных данных или
+                      другими
+                      федеральными законами.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <p>3.2. Оператор обязан:</p>
+                  <ul>
+                    <li>предоставлять субъекту персональных данных по его просьбе информацию, касающуюся обработки его
+                      персональных данных;
+                    </li>
+                    <li>организовывать обработку персональных данных в порядке, установленном действующим
+                      законодательством РФ;
+                    </li>
+                    <li>отвечать на обращения и запросы субъектов персональных данных и их законных представителей в
+                      соответствии с требованиями Закона о персональных данных;
+                    </li>
+                    <li>сообщать в уполномоченный орган по защите прав субъектов персональных данных по запросу этого
+                      органа
+                      необходимую информацию в течение 30 дней с даты получения такого запроса;
+                    </li>
+                    <li>публиковать или иным образом обеспечивать неограниченный доступ к настоящей Политике в отношении
+                      обработки персональных данных;
+                    </li>
+                    <li> принимать правовые, организационные и технические меры для защиты персональных данных от
+                      неправомерного
+                      или случайного доступа к ним, уничтожения, изменения, блокирования, копирования, предоставления,
+                      распространения персональных данных, а также от иных неправомерных действий в отношении
+                      персональных
+                      данных;
+                    </li>
+                    <li>прекратить передачу (распространение, предоставление, доступ) персональных данных, прекратить
+                      обработку
+                      и уничтожить персональные данные в порядке и случаях, предусмотренных Законом о персональных
+                      данных;
+                      исполнять иные обязанности, предусмотренные Законом о персональных данных.
+                    </li>
+                  </ul>
+                </li>
+
+              </ol>
+            </li>
+            <li>
+              <strong>4. Основные права и обязанности субъектов персональных данных</strong>
+              <ol>
+                <li>
+                  <p>4.1. Субъекты персональных данных имеют право:</p>
+                  <ul>
+                    <li>получать информацию, касающуюся обработки его персональных данных, за исключением случаев,
+                      предусмотренных федеральными законами. Сведения предоставляются субъекту персональных данных Оператором
+                      в доступной форме, и в них не должны содержаться персональные данные, относящиеся к другим субъектам
+                      персональных данных, за исключением случаев, когда имеются законные основания для раскрытия таких
+                      персональных данных. Перечень информации и порядок ее получения установлен Законом о персональных
+                      данных;</li>
+                    <li>требовать от оператора уточнения его персональных данных, их блокирования или уничтожения в случае, если
+                      персональные данные являются неполными, устаревшими, неточными, незаконно полученными или не являются
+                      необходимыми для заявленной цели обработки, а также принимать предусмотренные законом меры по защите
+                      своих прав;</li>
+                    <li>выдвигать условие предварительного согласия при обработке персональных данных в целях продвижения на
+                      рынке товаров, работ и услуг;</li>
+                    <li>на отзыв согласия на обработку персональных данных;</li>
+                    <li>обжаловать в уполномоченный орган по защите прав субъектов персональных данных или в судебном порядке
+                      неправомерные действия или бездействие Оператора при обработке его персональных данных;
+                      на осуществление иных прав, предусмотренных законодательством .</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>4.2. Субъекты персональных данных обязаны:</p>
+                  <ul>
+                    <li>предоставлять Оператору достоверные данные о себе;</li>
+                    <li>сообщать Оператору об уточнении (обновлении, изменении) своих персональных данных.</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <p> 4.3. Лица, передавшие Оператору недостоверные сведения о себе, либо сведения о другом субъекте
+                    персональных данных без согласия последнего, несут ответственность в соответствии с законодательством .</p>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/intlTelInput.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
