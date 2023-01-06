@@ -1,0 +1,14 @@
+.owl-carousel {
+    display: block !important;;
+}
+
+.tour-block {
+    position: relative;
+    max-width: 400px;
+    display: inline-block;
+    padding-right:5px;
+}
+
+.btn-style-two{
+    background-color: rgba(2, 1, 1, 0.31);
+}
