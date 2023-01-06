@@ -3472,8 +3472,8 @@ header h2 {
 }
 
 .logo .logo-mobile {
-    display: none;
-  }
+  display: none;
+}
 
 .btn-burger {
   display: none;
@@ -3900,40 +3900,50 @@ a.list-contacts-item:hover {
   header h2 {
     margin: 0 auto 0 0;
   }
-	header.fixed,
+  header.fixed,
   .header.fixed {
-    background: radial-gradient(74.21% 74.21% at 50% 78.1%, #67A1FF 0%, #084DBC 100%);
-		position: fixed;
+    background: radial-gradient(
+      74.21% 74.21% at 50% 78.1%,
+      #67a1ff 0%,
+      #084dbc 100%
+    );
+    position: fixed;
   }
-	header .logo .logo-text, header .logo .logo-name {
-		display: none;
-	}
-
-	header .logo .logo-mobile {
-    display: block;
+  header .logo {
+    color: #fff;
   }
-
-	.header .logo .logo-mobile {
+  header .logo .logo-name img {
     display: none;
   }
 
-	.header .logo .logo-text, .header .logo .logo-name {
-		display: block;
-	}
+  header .logo .logo-name .logo-mobile {
+    display: block;
+  }
+  .header .logo {
+    color: #292929;
+  }
+  .header .logo .logo-mobile,
+  .header .logo .logo-name .logo-mobile {
+    display: none;
+  }
 
-	.header .phone-mobile {
-		background: #084DBC;
-		fill: #fff;
-	}
+  .header .logo .logo-name img {
+    display: block;
+  }
 
-	.header .btn-burger span {
-		background: #084DBC;
-	}
+  .header .phone-mobile {
+    background: #084dbc;
+    fill: #fff;
+  }
 
-	.header.fixed {
-		background: #fff;
-	}
-  
+  .header .btn-burger span {
+    background: #084dbc;
+  }
+
+  .header.fixed {
+    background: #fff;
+  }
+
   .phone-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4704,7 +4714,7 @@ a.list-contacts-item:hover {
     z-index: 3;
     background: transparent;
   }
-  
+
   .page {
     padding-top: 72px;
   }
