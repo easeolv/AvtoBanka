@@ -152,7 +152,7 @@ $('.btn-close-cookie').on('click', function (e) {
 });
 
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 65) {
+    if ($(this).scrollTop() > 25) {
         $('header').addClass('fixed');
     } else {
         $('header').removeClass('fixed');
