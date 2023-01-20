@@ -710,7 +710,7 @@ h2 {
 
 .home-v2 .subtitle {
   font-size: 26px;
-	line-height: 1.2;
+  line-height: 1.2;
   font-weight: normal;
   font-family: "Raleway", sans-serif;
   text-align: center;
@@ -718,15 +718,15 @@ h2 {
   text-transform: none;
   color: #fff;
   text-align: center;
-	margin: 4px auto 0;
+  margin: 4px auto 0;
 }
 
 .home-v2 .slider-title {
   color: #fff;
-	line-height: 1.2;
+  line-height: 1.2;
   text-align: center;
   font-feature-settings: "pnum" on, "lnum" on;
-  text-transform: none;
+  /* text-transform: ; */
 }
 
 .home-v2 .form-callback {
@@ -743,6 +743,10 @@ h2 {
   justify-content: space-between;
 }
 
+.home-v2 .form-callback-v2 {
+  background: #fff;
+}
+
 .home-v2 .form-callback__title {
   text-transform: uppercase;
   font-size: 30px;
@@ -752,6 +756,14 @@ h2 {
   margin: 0 auto 19px;
   color: #fff;
   font-family: "Oswald", sans-serif;
+}
+
+.home-v2 .form-callback-v2 .form-callback__title {
+  color: #292929;
+}
+
+.home-v2 .form-callback__title.color-accent {
+  color: #084dbc;
 }
 
 .home-v2 .form-callback label {
@@ -3158,6 +3170,10 @@ a.color-black:hover {
   margin: -60px -277px 0 -210px;
 }
 
+.home-type-v2 .home-slider__img {
+  margin: -60px -317px 0 -70px;
+}
+
 .schedule-info {
   text-align: center;
   margin: 10px auto 20px;
@@ -3967,6 +3983,10 @@ a.list-contacts-item:hover {
     max-width: 800px;
     margin: 0 -277px 0 -210px;
   }
+
+  .home-type-v2 .home-slider__img {
+    margin: 0 -277px 0 -70px;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -4340,6 +4360,11 @@ a.list-contacts-item:hover {
     max-width: 700px;
     margin: 0 -277px 0 -100px;
   }
+
+  .home-type-v2 .home-slider__img {
+    margin: 0 -277px 0 -50px;
+  }
+
   .form-success {
     margin: 30px auto 0;
   }
@@ -4833,13 +4858,13 @@ a.list-contacts-item:hover {
     font-size: 18px;
   }
 
-	.home-v2 .form-callback__title {
-		display: none;
-	}
+  .home-v2 .form-callback__title {
+    display: none;
+  }
 
-	.home-v2 .slider-title {
-		font-size: 34px;
-	}
+  .home-v2 .slider-title {
+    font-size: 34px;
+  }
 
   .address-company {
     padding: 40px 15px 30px;
