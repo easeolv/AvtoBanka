@@ -689,7 +689,141 @@ h2 {
   display: none;
 }
 
+.home-v2 {
+  background: radial-gradient(
+      32.19% 93.64% at 67.81% 55.91%,
+      #67a1ff 0%,
+      #084dbc 100%
+    ),
+    #084dbc;
+}
+
+.home-v2::before {
+  display: none;
+}
+
+.home-v2 .home-slider-content {
+  margin: 0 0 70px;
+  padding: 0;
+  max-width: 610px;
+}
+
+.home-v2 .subtitle {
+  font-size: 26px;
+	line-height: 1.2;
+  font-weight: normal;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-transform: none;
+  color: #fff;
+  text-align: center;
+	margin: 4px auto 0;
+}
+
+.home-v2 .slider-title {
+  color: #fff;
+	line-height: 1.2;
+  text-align: center;
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-transform: none;
+}
+
+.home-v2 .form-callback {
+  margin: 49px 0 0;
+  max-width: none;
+  width: 100%;
+  background: linear-gradient(
+    96.97deg,
+    #053c96 3.91%,
+    rgba(5, 60, 150, 0.4) 99.42%
+  );
+  border-radius: 5px;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.home-v2 .form-callback__title {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto 19px;
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+.home-v2 .form-callback label {
+  width: calc(50% - 5px);
+  margin: 0 0 10px;
+  max-width: none;
+}
+
+.home-v2 .form-callback .btn {
+  width: 100%;
+  max-width: none;
+}
+
+.address-company {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid #ced1d6;
+  box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 36px 40px;
+}
+
+.address-company h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin: 0 auto 20px;
+}
+
+.address-company .tabs {
+  max-width: 366px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.address-company .tab-content {
+  padding: 20px 0 0;
+}
+
+.address-company .tab-content li {
+  margin: 0;
+}
+
+.address-company__footer {
+  text-align: center;
+  padding: 20px 0 0;
+  margin: 20px 0 0;
+  border-top: 1px solid #ced1d6;
+}
+
+.address-company .box-text {
+  text-align: center;
+  margin: 0 auto 10px;
+  max-width: 276px;
+  width: 100%;
+  line-height: 1;
+}
+
+.address-company .tel {
+  color: #084dbc;
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
 /*==========  home end  ==========*/
+
 /*==========  scheme  ==========*/
 .scheme {
   padding: 60px 0;
@@ -721,11 +855,13 @@ h2 {
   transform: translate(-50%, 0);
   width: 1px;
   height: 100%;
-  border: 2px dashed #084dbc;
+  border: 1px dashed #084dbc;
   z-index: -1;
 }
 
 .number-stages {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -741,7 +877,7 @@ h2 {
   height: 60px;
   min-width: 60px;
   background: #084dbc;
-  font-size: 40px;
+  font-size: 36px;
   padding: 0 3px 0 0;
   font-weight: 500;
   font-family: "Oswald", sans-serif;
@@ -750,6 +886,37 @@ h2 {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
+}
+
+.number-stages::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url("../img/figure-number.svg") no-repeat center;
+  background-size: 100%;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: -11px;
+  z-index: -1;
+}
+
+.number-stages::before {
+  content: "";
+  position: absolute;
+  border: 1px solid #ffffff;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+.scheme-row:nth-child(even) .number-stages::after {
+  left: auto;
+  right: -11px;
+  transform: translate(0, -50%) rotate(180deg);
 }
 
 .scheme-row {
@@ -822,9 +989,9 @@ h2 {
 }
 
 .category-auto-box1 .category-auto-box__img {
-  max-width: 344px;
-  right: -20px;
-  bottom: -30px;
+  max-width: 310px;
+  right: -25px;
+  bottom: -14px;
 }
 
 .category-auto-box2 .category-auto-box__img {
@@ -850,7 +1017,7 @@ h2 {
 }
 
 .category-auto-box6 .category-auto-box__img {
-  right: 0;
+  right: -21px;
   max-width: 360px;
   bottom: -14px;
 }
@@ -3571,18 +3738,19 @@ header h2 {
   min-width: 260px;
 }
 
-/*==========  header end  ==========*/
-@font-face {
-  font-family: "Gilroy";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url("../fonts/Gilroy/Gilroy-Regular.eot");
-  src: url("../fonts/Gilroy/Gilroy-Regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("../fonts/Gilroy/Gilroy-Regular.woff") format("woff"),
-    url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
+.header-v2 .logo,
+.header-v2 .phone,
+.header-v2 .menu li a,
+.header-v2 .links-accent,
+.header-v2 .dropdown-toggle {
+  color: #fff;
 }
+
+.header-v2 .dropdown-language .dropdown-toggle:after {
+  filter: invert(1) grayscale(0);
+}
+
+/*==========  header end  ==========*/
 
 /*==========  footer  ==========*/
 footer {
@@ -4021,14 +4189,17 @@ a.list-contacts-item:hover {
   .scheme-row:nth-child(even) .number-stages {
     margin: 0 auto -25px;
   }
+
   .number-stages {
-    -webkit-box-ordinal-group: 0;
-    -ms-flex-order: -1;
     order: -1;
     margin: 0 auto -25px;
-    position: relative;
-    z-index: 1;
   }
+
+  .number-stages::before,
+  .number-stages::after {
+    display: none;
+  }
+
   .scheme-box {
     font-size: 16px;
     padding: 30px 18px;
@@ -4251,6 +4422,11 @@ a.list-contacts-item:hover {
   .form-success-v3 .form-success__content {
     padding: 0;
     border: none;
+  }
+
+  .home-v2 .home-slider-content {
+    max-width: none;
+    margin: 0 auto 30px;
   }
 }
 
@@ -4637,6 +4813,39 @@ a.list-contacts-item:hover {
     max-width: none;
   }
   .form-success-v3 .label-price {
+    max-width: none;
+  }
+
+  .home-v2 {
+    padding: 80px 0 30px;
+  }
+
+  .home-v2 .form-callback label {
+    width: 100%;
+  }
+
+  .home-v2 .form-callback {
+    padding: 20px;
+    margin: 30px auto 0;
+  }
+
+  .home-v2 .subtitle {
+    font-size: 18px;
+  }
+
+	.home-v2 .form-callback__title {
+		display: none;
+	}
+
+	.home-v2 .slider-title {
+		font-size: 34px;
+	}
+
+  .address-company {
+    padding: 40px 15px 30px;
+  }
+
+  .address-company .tabs {
     max-width: none;
   }
 }
