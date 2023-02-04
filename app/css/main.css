@@ -561,6 +561,11 @@ h2 {
 }
 .home .form-callback .checkbox-form {
   margin: 5px 0 20px;
+	text-align: left;
+}
+
+.home-slider .slick-list {
+  overflow: visible;
 }
 
 .home-slider-content {
@@ -770,6 +775,15 @@ h2 {
   width: calc(50% - 5px);
   margin: 0 0 10px;
   max-width: none;
+}
+
+.home-v2 .form-callback .checkbox {
+  color: #fff;
+  width: 100%;
+}
+
+.home-v2 .form-callback .checkbox a {
+  color: #fff;
 }
 
 .home-v2 .form-callback .btn {
@@ -1800,8 +1814,8 @@ h2 {
 
 .iti__country-list--dropup,
 .iti__country-list {
-  max-width: 330px;
-  min-width: 330px;
+  max-width: 260px;
+  min-width: 260px;
   margin: 5px 0 0;
   border: 1px solid #c4c4c4;
   border-radius: 5px;
@@ -1845,6 +1859,7 @@ h2 {
 .iti__flag-box,
 .iti__country-name {
   margin-right: 5px;
+	color: #000
 }
 
 /*==========  callback end  ==========*/
@@ -4245,7 +4260,7 @@ a.list-contacts-item:hover {
     margin: 0 -15px;
   }
   .why-company-content {
-    margin: 0 0 30px;
+    margin: 0;
   }
   .why-company-content .box-text {
     max-width: none;
