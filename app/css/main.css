@@ -561,7 +561,7 @@ h2 {
 }
 .home .form-callback .checkbox-form {
   margin: 5px 0 20px;
-	text-align: left;
+  text-align: left;
 }
 
 .home-slider .slick-list {
@@ -1674,6 +1674,16 @@ h2 {
   margin: 0 10px 0 0;
 }
 
+.form .checkbox-form {
+  color: #fff;
+  max-width: 1010px;
+  margin: 10px auto 0;
+}
+
+.form .checkbox-form a {
+  color: #fff;
+}
+
 .form-callback input {
   padding: 0 0 0 56px;
 }
@@ -1859,7 +1869,7 @@ h2 {
 .iti__flag-box,
 .iti__country-name {
   margin-right: 5px;
-	color: #000
+  color: #000;
 }
 
 /*==========  callback end  ==========*/
@@ -3777,6 +3787,13 @@ header h2 {
   color: #fff;
 }
 
+.header-v2 .menu li .dropdown-item {
+  color: #000;
+}
+.header-v2 .menu .dropdown-toggle:after {
+  filter: brightness(0) invert(1);
+}
+
 .header-v2 .dropdown-language .dropdown-toggle:after {
   filter: invert(1) grayscale(0);
 }
@@ -3980,6 +3997,9 @@ a.list-contacts-item:hover {
   .callback .form label,
   .callback .form button {
     max-width: 30%;
+  }
+  .callback .form .checkbox-form {
+    max-width: 92%;
   }
   .why-company-img {
     min-width: 650px;
@@ -4518,6 +4538,12 @@ a.list-contacts-item:hover {
     max-width: none;
     width: 100%;
   }
+	.callback .form .checkbox-form {
+		max-width: 100%;
+	}
+	.callback .form button {
+		order: 1;
+	}
   .why-company-box {
     margin: 0;
     width: 33.3%;
