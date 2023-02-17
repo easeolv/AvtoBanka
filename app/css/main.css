@@ -2734,6 +2734,24 @@ textarea::placeholder {
   font-weight: bold;
 }
 
+.error-input-v2 .error-tooltip {
+background: #bb0c2b;
+  border-radius: 2px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+	padding: 1px 4px;
+	top: -8px;
+	right: 10px;
+	left: auto;
+	transform: none;
+}
+
+.error-input-v2 .error-tooltip::before {
+  display: none;
+  
+}
+
 .list-maps {
   width: 100%;
   padding: 0 0 0 49px;
@@ -4538,12 +4556,12 @@ a.list-contacts-item:hover {
     max-width: none;
     width: 100%;
   }
-	.callback .form .checkbox-form {
-		max-width: 100%;
-	}
-	.callback .form button {
-		order: 1;
-	}
+  .callback .form .checkbox-form {
+    max-width: 100%;
+  }
+  .callback .form button {
+    order: 1;
+  }
   .why-company-box {
     margin: 0;
     width: 33.3%;
